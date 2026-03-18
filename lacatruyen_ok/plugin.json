@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "LacaTruyen",
+        "author": "ivanzzz",
+        "version": 15,
+        "source": "https://lacatruyen.club",
+        "regexp": "(www\\.)?lacatruyen\\.club/store/story/[0-9a-zA-Z-]+(/.*)?$",
+        "description": "Đọc truyện tại LacaTruyen",
+        "locale": "vi_VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "detail": "detail.js",
+        "search": "search.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
+}

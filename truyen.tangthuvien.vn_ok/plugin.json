@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "Tang Thu Vien",
+        "author": "ivanzzz",
+        "version": 1,
+        "source": "https://truyen.tangthuvien.vn",
+        "regexp": "(www\\.)?truyen\\.tangthuvien\\.vn/doc-truyen/[^\\s]+$",
+        "description": "Doc truyen tai Tang Thu Vien",
+        "locale": "vi_VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "detail": "detail.js",
+        "search": "search.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
+}

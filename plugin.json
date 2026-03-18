@@ -1,0 +1,217 @@
+{
+    "metadata": {
+        "author": "ivanzzz",
+        "description": "Danh sách plugin vBook"
+    },
+    "data": [
+        {
+            "name": "AkayTruyen",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/akaytruyen.com_ok/akaytruyen.com_ok.zip",
+            "version": 2,
+            "source": "https://akaytruyen.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/akaytruyen.com_ok/icon.png",
+            "description": "Doc truyen tai AkayTruyen",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "AliceSW",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/alice_ok/alice_ok.zip",
+            "version": 4,
+            "source": "https://www.alicesw.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/alice_ok/icon.png",
+            "description": "trang truyên seggg.",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
+        },
+        {
+            "name": "Bàn Long",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/banlong_ok/banlong_ok.zip",
+            "version": 8,
+            "source": "https://blhvip.vn",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/banlong_ok/icon.png",
+            "description": "Đọc truyện trên blhvip.vn",
+            "type": "novel",
+            "locale": "vi-VN"
+        },
+        {
+            "name": "bFaloo (飞卢小说)",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/bfaloo_ok/bfaloo_ok.zip",
+            "version": 7,
+            "source": "https://b.faloo.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/bfaloo_ok/icon.png",
+            "description": "BFaloo (飞卢小说)",
+            "type": "chinese_novel",
+            "locale": "zh-CN"
+        },
+        {
+            "name": "Hang Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/hangtruyenchu_ok.zip",
+            "version": 2,
+            "source": "https://hangtruyenchu.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/icon.png",
+            "description": "Đọc truyện tại Hang Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "La Cà Truyện",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lacatruyen_ok/lacatruyen_ok.zip",
+            "version": 15,
+            "source": "https://lacatruyen.club",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lacatruyen_ok/icon.png",
+            "description": "Đọc truyện tại La Cà Truyện",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Mê Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.co_ok/metruyenchu.co_ok.zip",
+            "version": 1,
+            "source": "https://metruyenchu.co",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.co_ok/icon.png",
+            "description": "Mê Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "MeTruyenChu",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.com.vn_ok/metruyenchu.com.vn_ok.zip",
+            "version": 2,
+            "source": "https://metruyenchu.com.vn/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.com.vn_ok/icon.png",
+            "description": "Doc truyen tren MeTruyenChu",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "MeTruyenCV",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.com.vn_ok/metruyencv.com.vn_ok.zip",
+            "version": 1,
+            "source": "https://metruyencv.com.vn/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.com.vn_ok/icon.png",
+            "description": "Doc truyen tren MeTruyenCV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Mê Truyện CV",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.xyz_ok/metruyencv.xyz_ok.zip",
+            "version": 4,
+            "source": "https://metruyencv.xyz",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.xyz_ok/icon.png",
+            "description": "Đọc truyện trên trang Mê Truyện CV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Tiệm Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/tiemtruyenchu_ok.zip",
+            "version": 2,
+            "source": "https://www.tiemtruyenchu.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/icon.png",
+            "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Tàng Thư Viện",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyen.tangthuvien.vn_ok/truyen.tangthuvien.vn_ok.zip",
+            "version": 1,
+            "source": "https://truyen.tangthuvien.vn",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyen.tangthuvien.vn_ok/icon.png",
+            "description": "Đọc truyện tại Tàng Thư Viện",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Truyện Chữ Hay",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/truyenchuhay_ok.zip",
+            "version": 1,
+            "source": "https://truyenchuhay.org",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/icon.png",
+            "description": "Đọc truyện tại Truyện Chữ Hay",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Truyện dịch miễn phí",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyendichmienphi_ok/truyendichmienphi_ok.zip",
+            "version": 15,
+            "source": "https://truyendichmienphi.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyendichmienphi_ok/icon.png",
+            "description": "Đọc truyện tại Truyện Dịch Miễn Phí",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Truyện Mới KK",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenmoikk_ok/truyenmoikk_ok.zip",
+            "version": 1,
+            "source": "https://truyenmoikk.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenmoikk_ok/icon.png",
+            "description": "Đọc truyện tại Truyện Mới KK",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Truyện Net",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyennet.vn_ok/truyennet.vn_ok.zip",
+            "version": 1,
+            "source": "https://truyennet.vn/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyennet.vn_ok/icon.png",
+            "description": "Đọc truyện trên trang Truyện Net",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Wattpad",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wattpad.com.vn_ok/wattpad.com.vn_ok.zip",
+            "version": 1,
+            "source": "https://wattpad.com.vn/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wattpad.com.vn_ok/icon.png",
+            "description": "Đọc truyện trên trang Wattpad",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Web Truyện Dịch",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/webtruyendich_ok/webtruyendich_ok.zip",
+            "version": 2,
+            "source": "https://webtruyendich.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/webtruyendich_ok/icon.png",
+            "description": "Đọc truyện tại Web Truyện Dịch",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Xa Lộ Sách",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/xalosach_ok/xalosach_ok.zip",
+            "version": 1,
+            "source": "https://xalosach.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/xalosach_ok/icon.png",
+            "description": "Đọc truyện tại Xa Lộ Sách",
+            "type": "novel",
+            "locale": "vi_VN"
+        }
+    ]
+}

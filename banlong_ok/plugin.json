@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Bàn Long",
+    "author": "ivanzzz",
+    "version": 8,
+    "source": "https://blhvip.vn",
+    "regexp": "(www.)?blhvip.vn/truyen/[0-9a-z-]+/?",
+    "description": "Đọc truyện trên blhvip.vn",
+    "locale": "vi-VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

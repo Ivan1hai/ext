@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "Hang Truyện Chữ",
+        "author": "ivanzzz",
+        "version": 2,
+        "source": "https://hangtruyenchu.com",
+        "regexp": "(www\\.)?hangtruyenchu\\.com/truyen/[0-9a-z-]+(/.*)?$",
+        "description": "Đọc truyện tại Hang Truyện Chữ",
+        "locale": "vi_VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "gen.js",
+        "detail": "detail.js",
+        "search": "search.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
+}
