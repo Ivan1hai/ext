@@ -2,7 +2,7 @@
     "metadata": {
         "name": "LacaTruyen",
         "author": "ivanzzz",
-        "version": 15,
+        "version": 16,
         "source": "https://lacatruyen.club",
         "regexp": "(www\\.)?lacatruyen\\.club/store/story/[0-9a-zA-Z-]+(/.*)?$",
         "description": "Đọc truyện tại LacaTruyen",
