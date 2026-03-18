@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "name": "Tang Thu Vien",
+        "name": "Tàng Thư Viện",
         "author": "ivanzzz",
         "version": 1,
         "source": "https://truyen.tangthuvien.vn",
         "regexp": "(www\\.)?truyen\\.tangthuvien\\.vn/doc-truyen/[^\\s]+$",
-        "description": "Doc truyen tai Tang Thu Vien",
+        "description": "Đọc truyện tại Tàng Thư Viện",
         "locale": "vi_VN",
         "language": "javascript",
         "type": "novel"

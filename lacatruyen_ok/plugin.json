@@ -1,11 +1,11 @@
 {
     "metadata": {
-        "name": "LacaTruyen",
+        "name": "La Cà Truyện",
         "author": "ivanzzz",
-        "version": 16,
+        "version": 1,
         "source": "https://lacatruyen.club",
         "regexp": "(www\\.)?lacatruyen\\.club/store/story/[0-9a-zA-Z-]+(/.*)?$",
-        "description": "Đọc truyện tại LacaTruyen",
+        "description": "Đọc truyện tại La Cà Truyện",
         "locale": "vi_VN",
         "language": "javascript",
         "type": "novel"

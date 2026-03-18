@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "Truyện dịch miễn phí",
+    "name": "Truyện Dịch Miễn Phí",
     "author": "ivanzzz",
-    "version": 15,
+    "version": 1,
     "source": "https://truyendichmienphi.com",
     "regexp": "https://truyendichmienphi.com/(.*?)$",
-    "description": "TruyenDichMienPhi.com là nền tảng đọc truyện chữ online miễn phí. Truyện dịch rõ nghĩa, mượt mà, không quảng cáo, không cần đăng nhập. Cập nhật nhanh các thể loại hot: tiên hiệp, huyền ảo, đô thị, kiếm hiệp, xuyên không...",
+    "description": "Truyện Dịch Miễn Phí",
     "locale": "vi_VN",
     "language": "javascript",
     "type": "novel"

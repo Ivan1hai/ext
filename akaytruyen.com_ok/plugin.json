@@ -2,7 +2,7 @@
     "metadata": {
         "name": "AkayTruyen",
         "author": "ivanzzz",
-        "version": 2,
+        "version": 1,
         "source": "https://akaytruyen.com",
         "regexp": "(www\\.)?akaytruyen\\.com/truyen/[0-9a-zA-Z-]+(/.*)?$",
         "description": "Doc truyen tai AkayTruyen",

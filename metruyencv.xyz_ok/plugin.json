@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Mê Truyện CV",
     "author": "ivanzzz",
-    "version": 4,
+    "version": 1,
     "source": "https://metruyencv.xyz",
     "regexp": "(www.)?(metruyenchu|mtccv|metruyencv).[a-z]+/truyen/[a-zA-Z0-9-]+/?([?].*)?$",
     "description": "Đọc truyện trên trang Mê Truyện CV",

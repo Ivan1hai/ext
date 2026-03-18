@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Tiệm Truyện Chữ",
     "author": "ivanzzz",
-    "version": 2,
+    "version": 1,
     "source": "https://www.tiemtruyenchu.com/",
     "regexp": "(www\\.)?tiemtruyenchu\\.com/.*",
     "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",

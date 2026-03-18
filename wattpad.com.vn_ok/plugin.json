@@ -5,7 +5,7 @@
     "version": 1,
     "source": "https://wattpad.com.vn/",
     "regexp": "(www\\.)?wattpad\\.com\\.vn/[^/]+(?:/chuong-[^/?#]+)?/?$",
-    "description": "Doc truyen tren Wattpad",
+    "description": "Đọc truyện trên Wattpad",
     "locale": "vi_VN",
     "language": "javascript",
     "type": "novel"

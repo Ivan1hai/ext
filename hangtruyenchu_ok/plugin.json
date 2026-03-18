@@ -2,7 +2,7 @@
     "metadata": {
         "name": "Hang Truyện Chữ",
         "author": "ivanzzz",
-        "version": 2,
+        "version": 1,
         "source": "https://hangtruyenchu.com",
         "regexp": "(www\\.)?hangtruyenchu\\.com/truyen/[0-9a-z-]+(/.*)?$",
         "description": "Đọc truyện tại Hang Truyện Chữ",

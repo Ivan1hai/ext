@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "name": "webtruyendich",
+    "name": "Web Truyện Dịch",
     "author": "ivanzzz",
-    "version": 2,
+    "version": 1,
     "source": "https://webtruyendich.com/",
     "regexp": "^https?://(www\\.)?webtruyendich\\.com/",
-    "description": "trang web đọc truyện chữ online.",
+    "description": "Web Truyện Dịch",
     "locale": "vi_VN",
     "type": "novel"
   },

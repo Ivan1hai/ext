@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Bàn Long",
     "author": "ivanzzz",
-    "version": 8,
+    "version": 1,
     "source": "https://blhvip.vn",
     "regexp": "(www.)?blhvip.vn/truyen/[0-9a-z-]+/?",
     "description": "Đọc truyện trên blhvip.vn",

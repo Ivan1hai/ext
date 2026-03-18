@@ -2,7 +2,7 @@
   "metadata": {
     "name": "bFaloo (飞卢小说)",
     "author": "ivanzzz",
-    "version": 7,
+    "version": 1,
     "source": "https://b.faloo.com",
     "regexp": "(https?://)?(www\\.)?((b\\.faloo\\.com/\\d+\\.html)|(wap\\.faloo\\.com/\\d+\\.html))",
     "description": "BFaloo (飞卢小说)",
