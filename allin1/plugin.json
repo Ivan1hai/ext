@@ -2,7 +2,7 @@
   "metadata": {
     "name": "allin1",
     "author": "ivanzzz",
-    "version": 2,
+    "version": 1,
     "source": "https://sangtacviet.com/",
     "regexp": "https?://(sangtacviet.*?|14.225.254.182)/truyen/[^/]+/[^/]+/[^/]+/?$",
     "description": "Đọc truyện tại 14.225.254.182",
