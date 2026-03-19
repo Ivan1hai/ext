@@ -521,6 +521,23 @@ function stvBuildBookUrl(base, host, bookid, status) {
     return stvBuildUrl(base, "/truyen/" + stvEncode(host) + "/" + stvEncode(state) + "/" + stvEncode(bookid) + "/");
 }
 
+function stvBuildChapterUrl(base, host, bookid, cid, status) {
+    var state = stvTrim(status);
+    if (!state) state = "1";
+
+    return stvBuildUrl(base,
+        "/truyen/"
+        + stvEncode(host)
+        + "/"
+        + stvEncode(state)
+        + "/"
+        + stvEncode(bookid)
+        + "/"
+        + stvEncode(cid)
+        + "/"
+    );
+}
+
 function stvBuildPublicBookUrl(host, bookid, status, preferredBase) {
     var state = stvTrim(status);
     if (!state) state = "1";
@@ -540,19 +557,7 @@ function stvBuildPublicBookUrl(host, bookid, status, preferredBase) {
 }
 
 function stvBuildPublicChapterUrl(host, bookid, cid, status) {
-    var state = stvTrim(status);
-    if (!state) state = "1";
-    return stvBuildUrl(stvPublicBase(),
-        "/truyen/"
-        + stvEncode(host)
-        + "/"
-        + stvEncode(state)
-        + "/"
-        + stvEncode(bookid)
-        + "/"
-        + stvEncode(cid)
-        + "/"
-    );
+    return stvBuildChapterUrl(stvPublicBase(), host, bookid, cid, status);
 }
 
 function stvParseQuery(queryText) {

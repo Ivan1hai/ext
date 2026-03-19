@@ -33,6 +33,31 @@ function stvAtobFallback(input) {
     return output;
 }
 
+function stvBtoaFallback(input) {
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    var str = input === null || typeof input === "undefined" ? "" : String(input);
+    var output = "";
+    var i = 0;
+
+    while (i < str.length) {
+        var c1 = str.charCodeAt(i++) & 255;
+        var c2 = i < str.length ? (str.charCodeAt(i++) & 255) : NaN;
+        var c3 = i < str.length ? (str.charCodeAt(i++) & 255) : NaN;
+
+        var e1 = c1 >> 2;
+        var e2 = ((c1 & 3) << 4) | (isNaN(c2) ? 0 : (c2 >> 4));
+        var e3 = isNaN(c2) ? 64 : (((c2 & 15) << 2) | (isNaN(c3) ? 0 : (c3 >> 6)));
+        var e4 = isNaN(c3) ? 64 : (c3 & 63);
+
+        output += chars.charAt(e1)
+            + chars.charAt(e2)
+            + chars.charAt(e3)
+            + chars.charAt(e4);
+    }
+
+    return output;
+}
+
 function stvDecodeBase64Utf8(base64Text) {
     var input = stvTrim(base64Text).replace(/\s+/g, "");
     if (!input) return "";
@@ -327,6 +352,112 @@ function stvCookieObjectFromText(cookieText) {
     return hasCookie ? cookieObj : null;
 }
 
+function stvExtractChapterKeyDirect(grantBody, readcontextid) {
+    var code = stvTrim(grantBody);
+    if (!code) {
+        return {
+            chapterkey: "",
+            readcontextid: stvTrim(readcontextid),
+            error: ""
+        };
+    }
+
+    try {
+        var g = stvGetGlobalObject();
+        var cookieText = "mac_tt=true";
+        if (readcontextid) cookieText += "; readcontextid=" + readcontextid;
+
+        var sandboxWindow = {};
+        var sandboxDocument = {
+            hidden: false,
+            cookie: cookieText,
+            getElementById: function () { return null; },
+            createElement: function () {
+                return {
+                    innerHTML: "",
+                    appendChild: function () {}
+                };
+            },
+            body: {
+                appendChild: function () {}
+            }
+        };
+
+        sandboxWindow.window = sandboxWindow;
+        sandboxWindow.self = sandboxWindow;
+        sandboxWindow.globalThis = sandboxWindow;
+        sandboxWindow.document = sandboxDocument;
+        sandboxWindow.navigator = {};
+        sandboxWindow.localStorage = {
+            getItem: function () { return null; },
+            setItem: function () {},
+            removeItem: function () {}
+        };
+        sandboxWindow.sessionStorage = {
+            getItem: function () { return null; },
+            setItem: function () {},
+            removeItem: function () {}
+        };
+        sandboxWindow.app = { tcYCI: true, reader: {} };
+        sandboxWindow.Capacitor = {};
+        sandboxWindow.UWNgB = true;
+        sandboxWindow.atob = g && typeof g.atob === "function"
+            ? function (input) { return g.atob(String(input)); }
+            : stvAtobFallback;
+        sandboxWindow.btoa = g && typeof g.btoa === "function"
+            ? function (input) { return g.btoa(String(input)); }
+            : stvBtoaFallback;
+
+        var runner = new Function(
+            "window",
+            "document",
+            "navigator",
+            "localStorage",
+            "sessionStorage",
+            "app",
+            "Capacitor",
+            "UWNgB",
+            "atob",
+            "btoa",
+            "self",
+            "globalThis",
+            code + "; return {chapterkey:String((app&&app.reader&&app.reader.chapterkey)||''), cookie:String((document&&document.cookie)||'')};"
+        );
+
+        var result = runner.call(
+            sandboxWindow,
+            sandboxWindow,
+            sandboxDocument,
+            sandboxWindow.navigator,
+            sandboxWindow.localStorage,
+            sandboxWindow.sessionStorage,
+            sandboxWindow.app,
+            sandboxWindow.Capacitor,
+            sandboxWindow.UWNgB,
+            sandboxWindow.atob,
+            sandboxWindow.btoa,
+            sandboxWindow.self,
+            sandboxWindow.globalThis
+        ) || {};
+
+        var chapterkey = stvTrim(result.chapterkey);
+        var cookieOut = stvTrim(result.cookie);
+        var nextReadContextId = stvFirst(stvFindReadContextId(cookieOut), readcontextid);
+
+        return {
+            chapterkey: chapterkey,
+            readcontextid: nextReadContextId,
+            error: chapterkey ? "" : "Grantcontext khÃ´ng tráº£ vá» chapterkey."
+        };
+    } catch (e) {
+        return {
+            chapterkey: "",
+            readcontextid: stvTrim(readcontextid),
+            error: stvTrim(e && e.message ? e.message : e)
+        };
+    }
+}
+
 function stvExtractChapterKeyByBrowser(base, host, bookid, grantBody, readcontextid, launchUrl) {
     var code = stvTrim(grantBody);
     if (!code && (!host || !bookid)) {
@@ -405,7 +536,7 @@ function stvExtractChapterKeyByBrowser(base, host, bookid, grantBody, readcontex
             + "var __write=function(__name,__value){"
             + "try{if(typeof Cache!=='undefined'&&Cache&&typeof Cache.putVariable==='function'){Cache.putVariable(__name,String(__value||''));}}catch(_){}"
             + "};"
-            + "var __grantCode='';"
+            + "var __grantCode=" + JSON.stringify(code) + ";"
             + "var __err='';"
             + "try{"
             + "if(!document.getElementById('stv_chapterkey_out')){"
@@ -414,6 +545,7 @@ function stvExtractChapterKeyByBrowser(base, host, bookid, grantBody, readcontex
             + "if(document.body&&document.body.appendChild){document.body.appendChild(__host);}"
             + "}"
             + "}catch(_){}"
+            + "if(!__grantCode){"
             + "try{"
             + "var __xhr=new XMLHttpRequest();"
             + "__xhr.open('GET'," + JSON.stringify(grantPath) + ",false);"
@@ -424,7 +556,7 @@ function stvExtractChapterKeyByBrowser(base, host, bookid, grantBody, readcontex
             + "if(__xhr.status>=200&&__xhr.status<300){__grantCode=String(__xhr.responseText||'');}"
             + "else{__err='grant:'+String(__xhr.status||0);}"
             + "}catch(__ge){__err=String(__ge&&__ge.message?__ge.message:__ge);}"
-            + "if(!__grantCode){__grantCode=" + JSON.stringify(code) + ";}"
+            + "}"
             + "try{eval(__grantCode);}"
             + "catch(e){__err=(__err?(__err+'|'):'')+String(e&&e.message?e.message:e);};"
             + "var __k='';"
@@ -553,12 +685,12 @@ function stvExtractChapterKeyByBrowser(base, host, bookid, grantBody, readcontex
     }
 }
 
-function stvGrantContext(base, host, bookid, cid) {
+function stvGrantContext(base, host, bookid, cid, status) {
     var path = "/io/grantcontext/context?hostid=" + stvEncode(host) + "&bookid=" + stvEncode(bookid);
     var url = stvBuildUrl(base, path);
     var referer = cid
-        ? stvBuildUrl(base, "/truyen/" + stvEncode(host) + "/1/" + stvEncode(bookid) + "/" + stvEncode(cid) + "/")
-        : stvBuildBookUrl(base, host, bookid, 1);
+        ? stvBuildChapterUrl(base, host, bookid, cid, status)
+        : stvBuildBookUrl(base, host, bookid, status);
     function requestGrant() {
         var cookie = stvBuildCookie("mac_tt=true", base);
         var requestHeaders = {
@@ -594,9 +726,7 @@ function stvGrantContext(base, host, bookid, cid) {
     var setCookie = stvExtractSetCookie(result.headers);
     var readcontextid = stvFindReadContextId(setCookie);
     var browserResult = stvExtractChapterKeyByBrowser(base, host, bookid, result.text, readcontextid, referer);
-    if (!readcontextid) {
-        readcontextid = stvTrim(browserResult.readcontextid);
-    }
+    readcontextid = stvFirst(browserResult.readcontextid, readcontextid);
 
     return {
         chapterkey: stvTrim(browserResult.chapterkey),
