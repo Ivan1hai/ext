@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "name": "allin1",
+    "author": "ivanzzz",
+    "version": 1,
+    "source": "https://sangtacviet.com/",
+    "regexp": "https?://(sangtacviet.*?|14.225.254.182)/truyen/[^/]+/[^/]+/[^/]+/?$",
+    "description": "Đọc truyện tại 14.225.254.182",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel",
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "comment": "comment.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "thread_num": 1,
+    "delay": 10000
+  }
+}

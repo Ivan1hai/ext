@@ -59,4 +59,4 @@ def aggregate_plugins(root_dir):
     print(f"Successfully aggregated {len(data)} plugins into {output_path}")
 
 if __name__ == "__main__":
-    aggregate_plugins(os.getcwd())
+    aggregate_plugins("E:\Documents\ext\ext")
