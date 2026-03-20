@@ -9,7 +9,9 @@ if (typeof STV_CONFIG === "undefined") {
         SIGN_SALT: "erogh982^%*%^*",
         CF_SYNC_TIMEOUT_MS: 15000,
         CF_COOKIE_CACHE_TTL_MS: 1800000,
+        CHAPTER_GRANT_CACHE_TTL_MS: 1800000,
         CF_COOKIE_STORAGE_KEY: "stv.cf.cookie.v1",
+        CHAPTER_GRANT_STORAGE_KEY: "stv.chapter.grant.v1",
         APP_HEADERS: {
             "x-stv-transport": "app",
             "x-requested-with": "com.sangtacviet.mobilereader"
@@ -22,7 +24,9 @@ if (typeof STV_STATE === "undefined") {
         lastBase: STV_CONFIG.BASES[0],
         cfCookieByBase: {},
         cfCookieUpdatedAt: {},
-        cfCookieStoreLoaded: false
+        cfCookieStoreLoaded: false,
+        chapterGrantByBook: {},
+        chapterGrantUpdatedAt: {}
     };
 }
 

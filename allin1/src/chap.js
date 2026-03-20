@@ -14,14 +14,13 @@ function stvWithLoginHint(message) {
     if (!text) return text;
 
     var lower = text.toLowerCase();
-    var needHint = lower.indexOf("đăng nhập") >= 0
-        || lower.indexOf("dang nhap") >= 0
+    var needHint = lower.indexOf("dang nhap") >= 0
         || lower.indexOf("login") >= 0;
 
     if (!needHint) return text;
     if (text.indexOf("var AUTH_COOKIE = \"\";") >= 0) return text;
 
-    return text + " Vui lòng nhập toàn bộ chuỗi cookie vào mã bổ sung, ví dụ: 'var AUTH_COOKIE = \"hstamp=...;_ga=...;...\";'";
+    return text + " Vui long nhap toan bo chuoi cookie vao ma bo sung, vi du: 'var AUTH_COOKIE = \"hstamp=...;_ga=...;...\";'";
 }
 
 function stvFoldText(text) {
@@ -64,6 +63,108 @@ function stvShouldRetryReadChapter(json) {
         || message.indexOf("chapterkey") >= 0
         || message.indexOf("readcontextid") >= 0
         || message.indexOf("grantcontext") >= 0;
+}
+
+function stvChapterGrantCacheKey(base, payload) {
+    return stvNormalizeBase(base)
+        + "|"
+        + stvTrim(payload.host)
+        + "|"
+        + stvTrim(payload.bookid)
+        + "|"
+        + stvTrim(payload.status || "1");
+}
+
+function stvReadChapterGrantStore() {
+    if (!stvCanUseLocalStorage()) return null;
+
+    try {
+        var raw = localStorage.getItem(STV_CONFIG.CHAPTER_GRANT_STORAGE_KEY || "stv.chapter.grant.v1");
+        if (!raw) return null;
+
+        var parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== "object") return null;
+
+        return {
+            byBook: parsed.byBook && typeof parsed.byBook === "object" ? parsed.byBook : {},
+            updatedAt: parsed.updatedAt && typeof parsed.updatedAt === "object" ? parsed.updatedAt : {}
+        };
+    } catch (_) {
+        return null;
+    }
+}
+
+function stvWriteChapterGrantStore() {
+    if (!stvCanUseLocalStorage()) return;
+
+    try {
+        var payload = {
+            byBook: STV_STATE.chapterGrantByBook || {},
+            updatedAt: STV_STATE.chapterGrantUpdatedAt || {}
+        };
+        localStorage.setItem(STV_CONFIG.CHAPTER_GRANT_STORAGE_KEY || "stv.chapter.grant.v1", JSON.stringify(payload));
+    } catch (_) {
+        // Ignore storage write errors.
+    }
+}
+
+function stvEnsureChapterGrantStoreLoaded() {
+    if (STV_STATE.chapterGrantStoreLoaded) return;
+
+    STV_STATE.chapterGrantStoreLoaded = true;
+    if (!STV_STATE.chapterGrantByBook) STV_STATE.chapterGrantByBook = {};
+    if (!STV_STATE.chapterGrantUpdatedAt) STV_STATE.chapterGrantUpdatedAt = {};
+
+    var store = stvReadChapterGrantStore();
+    if (!store) return;
+
+    STV_STATE.chapterGrantByBook = store.byBook || {};
+    STV_STATE.chapterGrantUpdatedAt = store.updatedAt || {};
+}
+
+function stvGetCachedChapterGrant(base, payload) {
+    stvEnsureChapterGrantStoreLoaded();
+
+    var cacheKey = stvChapterGrantCacheKey(base, payload);
+    var cached = STV_STATE.chapterGrantByBook[cacheKey];
+    if (!cached || !cached.chapterkey || !cached.readcontextid) return null;
+
+    var updatedAt = STV_STATE.chapterGrantUpdatedAt[cacheKey] || 0;
+    var ttl = STV_CONFIG.CHAPTER_GRANT_CACHE_TTL_MS || 1800000;
+    if (updatedAt > 0 && (new Date().getTime() - updatedAt) > ttl) {
+        delete STV_STATE.chapterGrantByBook[cacheKey];
+        delete STV_STATE.chapterGrantUpdatedAt[cacheKey];
+        stvWriteChapterGrantStore();
+        return null;
+    }
+
+    return {
+        chapterkey: stvTrim(cached.chapterkey),
+        readcontextid: stvTrim(cached.readcontextid),
+        grantErr: ""
+    };
+}
+
+function stvSetCachedChapterGrant(base, payload, grant) {
+    if (!grant || !grant.chapterkey || !grant.readcontextid) return;
+    stvEnsureChapterGrantStoreLoaded();
+
+    var cacheKey = stvChapterGrantCacheKey(base, payload);
+    STV_STATE.chapterGrantByBook[cacheKey] = {
+        chapterkey: stvTrim(grant.chapterkey),
+        readcontextid: stvTrim(grant.readcontextid)
+    };
+    STV_STATE.chapterGrantUpdatedAt[cacheKey] = new Date().getTime();
+    stvWriteChapterGrantStore();
+}
+
+function stvClearCachedChapterGrant(base, payload) {
+    stvEnsureChapterGrantStoreLoaded();
+
+    var cacheKey = stvChapterGrantCacheKey(base, payload);
+    delete STV_STATE.chapterGrantByBook[cacheKey];
+    delete STV_STATE.chapterGrantUpdatedAt[cacheKey];
+    stvWriteChapterGrantStore();
 }
 
 function stvReadChapter(base, payload, grant) {
@@ -124,7 +225,7 @@ function stvReadChapter(base, payload, grant) {
 function execute(url) {
     var payload = stvParseChapterUrl(url);
     if (!payload || !payload.host || !payload.bookid || !payload.cid) {
-        return Response.error("URL chÆ°Æ¡ng STV khÃ´ng há»£p lá»‡.");
+        return Response.error("URL chuong STV khong hop le.");
     }
 
     var bases = stvGetBaseCandidates(payload.base);
@@ -135,10 +236,16 @@ function execute(url) {
         var maxAttempts = 3;
 
         for (var attempt = 0; attempt < maxAttempts; attempt++) {
-            var grant = stvGrantContext(base, payload.host, payload.bookid, payload.cid, payload.status);
+            var grant = stvGetCachedChapterGrant(base, payload);
+            var usedCachedGrant = !!grant;
+
+            if (!grant) {
+                grant = stvGrantContext(base, payload.host, payload.bookid, payload.cid, payload.status);
+            }
 
             if (!grant || !grant.chapterkey) {
-                lastErr = stvWithLoginHint(stvFirst(grant ? grant.grantErr : "", "KhÃ´ng láº¥y Ä‘Æ°á»£c chapterkey."));
+                stvClearCachedChapterGrant(base, payload);
+                lastErr = stvWithLoginHint(stvFirst(grant ? grant.grantErr : "", "Khong lay duoc chapterkey."));
                 if (attempt + 1 < maxAttempts) {
                     stvSleepRetry(350 + (attempt * 350));
                     continue;
@@ -148,7 +255,8 @@ function execute(url) {
 
             var json = stvReadChapter(base, payload, grant);
             if (!json) {
-                lastErr = stvWithLoginHint("KhÃ´ng Ä‘á»c Ä‘Æ°á»£c readchapter.");
+                stvClearCachedChapterGrant(base, payload);
+                lastErr = stvWithLoginHint("Khong doc duoc readchapter.");
                 if (attempt + 1 < maxAttempts) {
                     stvSleepRetry(350 + (attempt * 350));
                     continue;
@@ -157,7 +265,8 @@ function execute(url) {
             }
 
             if (String(json.code) !== "0") {
-                lastErr = stvWithLoginHint(stvFirst(json.err, json.info, "STV tráº£ vá» lá»—i khÃ´ng xÃ¡c Ä‘á»‹nh."));
+                stvClearCachedChapterGrant(base, payload);
+                lastErr = stvWithLoginHint(stvFirst(json.err, json.info, "STV tra ve loi khong xac dinh."));
                 if (attempt + 1 < maxAttempts && stvShouldRetryReadChapter(json)) {
                     stvSleepRetry(350 + (attempt * 350));
                     continue;
@@ -166,16 +275,19 @@ function execute(url) {
             }
 
             STV_STATE.lastBase = base;
+            if (!usedCachedGrant || (grant && grant.chapterkey && grant.readcontextid)) {
+                stvSetCachedChapterGrant(base, payload, grant);
+            }
 
             var raw = stvFirst(json.data, "");
             var content = stvNormalizeChapterHtml(payload.host, base, raw);
             if (!content) {
-                return Response.error("ÄÃ£ nháº­n dá»¯ liá»‡u chÆ°Æ¡ng nhÆ°ng khÃ´ng cÃ³ ná»™i dung.");
+                return Response.error("Da nhan du lieu chuong nhung khong co noi dung.");
             }
 
             return Response.success(content);
         }
     }
 
-    return Response.error(stvWithLoginHint(lastErr || "KhÃ´ng thá»ƒ táº£i ná»™i dung chÆ°Æ¡ng STV."));
+    return Response.error(stvWithLoginHint(lastErr || "Khong the tai noi dung chuong STV."));
 }
