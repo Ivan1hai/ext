@@ -5,6 +5,17 @@
     },
     "data": [
         {
+            "name": "1QXS",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/m.1qxs.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://m.1qxs.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/m.1qxs.com_ok/icon.png",
+            "description": "Doc truyen tren trang 1QXS",
+            "type": "novel",
+            "locale": "zh_CN"
+        },
+        {
             "name": "AkayTruyen",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/akaytruyen.com_ok/plugin.zip",
@@ -115,6 +126,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Truyen Hoan",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenhoan.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenhoan.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenhoan.com_ok/icon.png",
+            "description": "Doc truyen tren trang Truyen Hoan",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Truyện Chữ Hay",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/plugin.zip",
@@ -206,7 +228,7 @@
             "name": "allin1",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/allin1/plugin.zip",
-            "version": 2,
+            "version": 3,
             "source": "https://sangtacviet.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/allin1/icon.png",
             "description": "Đọc truyện tại 14.225.254.182",
