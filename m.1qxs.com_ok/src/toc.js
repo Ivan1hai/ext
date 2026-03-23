@@ -69,10 +69,21 @@ function normalizeChapterName(name) {
     var value = cleanText(name);
     if (!value) return "";
 
-    var match = value.match(/^0*\d+\s*[\u3001,:;\uFF0C\uFF1A.\uFF0E\-]\s*(.+)$/);
-    if (!match || !match[1]) return value;
+    var patterns = [
+        /^\s*0*\d+\s*[\u3001,:;\uFF0C\uFF1A.\uFF0E\-]\s*(.+)$/,
+        /^\s*第\s*[0-9\u96f6\u3007\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u4e24]+\s*[\u7ae0\u8282\u5377\u56de\u96c6\u90e8\u7bc7\u5e55\u8bdd\u9875]\s*[\u3001,:;\uFF0C\uFF1A.\uFF0E\-]?\s*(.+)$/,
+        /^\s*[0-9\u96f6\u3007\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\u5341\u767e\u5343\u4e07\u4e24]+\s*[\u7ae0\u8282\u5377\u56de\u96c6\u90e8\u7bc7\u5e55\u8bdd\u9875]\s*[\u3001,:;\uFF0C\uFF1A.\uFF0E\-]?\s*(.+)$/
+    ];
 
-    return cleanText(match[1]);
+    for (var i = 0; i < patterns.length; i++) {
+        var match = value.match(patterns[i]);
+        if (match && match[1]) {
+            var normalized = cleanText(match[1]);
+            if (normalized) return normalized;
+        }
+    }
+
+    return value;
 }
 
 function collectChapterEntries(doc, bookId, seen) {
