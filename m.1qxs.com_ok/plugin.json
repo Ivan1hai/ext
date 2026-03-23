@@ -18,5 +18,9 @@
     "search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
+  },
+  "config": {
+    "thread_num": 1,
+    "delay": 10000
   }
 }
