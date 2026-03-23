@@ -65,6 +65,19 @@ function isNoiseChapterName(name) {
         || value === "刷新";
 }
 
+function normalizeChapterName(name, order) {
+    var value = cleanText(name);
+    if (!value) return "";
+
+    var match = value.match(/^0*(\d+)(?:\s*[:：、.．-]\s*|\s+)(.+)$/);
+    if (!match) return value;
+
+    var index = parseInt(match[1], 10) || 0;
+    if (!index || index !== order || !match[2]) return value;
+
+    return cleanText(match[2]);
+}
+
 function collectChapterEntries(doc, bookId, seen) {
     var entries = [];
     var links = doc.select("a[href*='/xs_1/" + bookId + "/']");
@@ -73,8 +86,9 @@ function collectChapterEntries(doc, bookId, seen) {
     for (var i = 0; i < links.size(); i++) {
         var link = links.get(i);
         var href = normalizeUrl(link.attr("href"));
-        var name = cleanText(link.text());
         var match = href.match(pattern);
+        var order = match ? parseInt(match[1], 10) || 0 : 0;
+        var name = normalizeChapterName(link.text(), order);
         if (!match || seen[href] || isNoiseChapterName(name)) continue;
 
         seen[href] = true;
@@ -82,7 +96,7 @@ function collectChapterEntries(doc, bookId, seen) {
             name: name,
             url: href,
             host: BASE_URL,
-            order: parseInt(match[1], 10) || 0
+            order: order
         });
     }
 
