@@ -51,7 +51,7 @@ function stvToSearchItem(base, book) {
     var bookId = stvFirst(book.id, "");
     var name = stvFirst(book.tname, book.name, "(Không có tên)");
     var author = stvFirst(book.hauthor, book.author, "Không rõ");
-    var status = stvStatusText(book.status);
+    var status = "Dang ra";
     var desc = author;
     if (status) desc += " · " + status;
     if (bookHost) desc += " · " + bookHost;

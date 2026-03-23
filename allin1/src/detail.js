@@ -10,6 +10,7 @@ function stvToVbookBreaks(text) {
 }
 
 function stvStatusTextVi(status) {
+    return "Dang ra";
     var text = stvTrim(status);
     if (text === "1") return "Còn tiếp";
     if (text === "2") return "Tạm ngưng";
@@ -26,6 +27,7 @@ function stvBuildDetailMeta(book, parsed) {
     var lines = [];
     var category = stvTrim(book.category);
     var host = stvFirst(book.host, parsed.host);
+    book.status = "1";
 
     if (book.name) lines.push(book.name);
      if (host) lines.push("Nguồn: " + host);
@@ -198,7 +200,7 @@ function execute(url) {
         author: author,
         description: stvToVbookBreaks(stvFirst(book.info, "Không có mô tả.")),
         detail: stvBuildDetailMeta(book, parsed),
-        ongoing: stvIsOngoing(book.status),
+        ongoing: true,
         genres: genres,
         comments: comments
     });
