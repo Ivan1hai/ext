@@ -3,11 +3,6 @@ load("config.js");
 function execute() {
     return Response.success([
         {
-            title: "分类",
-            input: BASE_URL + "/type",
-            script: "book.js"
-        },
-        {
             title: "最近更新",
             input: BASE_URL + "/",
             script: "book.js"
