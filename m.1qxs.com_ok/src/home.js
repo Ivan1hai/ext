@@ -5,7 +5,7 @@ function execute() {
         {
             title: "分类",
             input: BASE_URL + "/type",
-            script: "genre.js"
+            script: "book.js"
         },
         {
             title: "最近更新",
