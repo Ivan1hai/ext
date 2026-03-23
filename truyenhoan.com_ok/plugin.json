@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Truyen Hoan",
     "author": "ivanzzz",
-    "version": 1,
+    "version": 2,
     "source": "https://truyenhoan.com/",
     "regexp": "(www\\.)?truyenhoan\\.com/[^/]+\\.[0-9]+/?$",
     "description": "Doc truyen tren trang Truyen Hoan",
