@@ -1,7 +1,7 @@
 load("config.js");
 
 function buildCatalogPagePattern(bookId) {
-    return new RegExp("/catalog_1/" + bookId + "(?:/(\\d+))?/?$", "i");
+    return new RegExp("/catalog_\\d+/" + bookId + "(?:/(\\d+))?(?:\\.html)?/?$", "i");
 }
 
 function extractCatalogPageOrder(url, bookId) {
@@ -14,14 +14,16 @@ function isCatalogPageUrl(url, bookId) {
     return buildCatalogPagePattern(bookId).test(normalizeUrl(url));
 }
 
-function collectCatalogPageUrls(doc, bookId) {
+function collectCatalogPageUrls(doc, bookId, currentUrl) {
     var urls = [];
     var seen = {};
     var selectors = [
         "select.pagelist option",
-        "select option[value*='/catalog_1/" + bookId + "']",
-        ".chapter_page a[href*='/catalog_1/" + bookId + "']",
-        "a[href*='/catalog_1/" + bookId + "']"
+        "select option[value*='/catalog_']",
+        ".chapter_page a[href*='/catalog_']",
+        "a[href*='/catalog_']",
+        ".page a",
+        ".pagelist a"
     ];
 
     for (var s = 0; s < selectors.length; s++) {
@@ -37,7 +39,11 @@ function collectCatalogPageUrls(doc, bookId) {
 
             var value = cleanText(raw);
             if (!value) continue;
-            if (/^\d+$/.test(value)) value = buildCatalogUrl(bookId, value);
+            if (/^\d+$/.test(value)) {
+                var prefixMatch = currentUrl ? String(currentUrl).match(/(catalog_\d+)/i) : null;
+                var prefix = prefixMatch ? prefixMatch[1] : "catalog_1";
+                value = BASE_URL + "/" + prefix + "/" + bookId + "/" + value;
+            }
 
             var href = normalizeUrl(value);
             if (!isCatalogPageUrl(href, bookId) || seen[href]) continue;
@@ -88,8 +94,8 @@ function normalizeChapterName(name) {
 
 function collectChapterEntries(doc, bookId, seen) {
     var entries = [];
-    var links = doc.select("a[href*='/xs_1/" + bookId + "/']");
-    var pattern = new RegExp("/xs_1/" + bookId + "/(\\d+)/?$", "i");
+    var links = doc.select("a[href*='/xs_']");
+    var pattern = new RegExp("/xs_\\d+/" + bookId + "/(\\d+)/?$", "i");
 
     for (var i = 0; i < links.size(); i++) {
         var link = links.get(i);
@@ -131,17 +137,31 @@ function execute(url) {
         if (!currentUrl || seenPages[currentUrl]) continue;
 
         seenPages[currentUrl] = true;
+        if (guard > 0 && typeof sleep === "function") {
+            sleep(600);
+        }
         guard += 1;
 
         var doc = fetchStableDocument(currentUrl, detailUrl, detailUrl);
         if (!doc) continue;
 
         var entries = collectChapterEntries(doc, bookId, seenChapters);
-        for (var i = 0; i < entries.length; i++) {
-            if (entries[i].name) chapters.push(entries[i]);
+        if (entries.length > 0) {
+            for (var i = 0; i < entries.length; i++) {
+                if (entries[i].name) chapters.push(entries[i]);
+            }
+
+            var catMatch = String(currentUrl).match(/(catalog_\d+)/i);
+            var catPrefix = catMatch ? catMatch[1] : "catalog_1";
+            var currentOrder = extractCatalogPageOrder(currentUrl, bookId);
+            var nextPageUrl = BASE_URL + "/" + catPrefix + "/" + bookId + "/" + (currentOrder + 1);
+            if (!seenPages[nextPageUrl] && !queuedPages[nextPageUrl]) {
+                queuedPages[nextPageUrl] = true;
+                pendingPages.push(nextPageUrl);
+            }
         }
 
-        var pageUrls = collectCatalogPageUrls(doc, bookId);
+        var pageUrls = collectCatalogPageUrls(doc, bookId, currentUrl);
         for (var j = 0; j < pageUrls.length; j++) {
             var pageUrl = pageUrls[j];
             if (seenPages[pageUrl] || queuedPages[pageUrl]) continue;

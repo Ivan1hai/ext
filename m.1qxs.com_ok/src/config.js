@@ -98,8 +98,13 @@ function fetchStableText(url, referer, warmUrl) {
     if (!isBlockedText(text)) return text;
 
     if (warmUrl) {
+        if (typeof sleep === "function") sleep(1500);
         fetchText(warmUrl, referer);
         text = fetchText(url, warmUrl);
+    }
+
+    if (isBlockedText(text)) {
+        throw new Error("Trang web từ chối kết nối (chặn) vì tải bộ mục lục quá nhanh/nhiều. Vui lòng dừng tải và thử làm mới lại sau 30-60 giây.");
     }
 
     return text;
@@ -312,12 +317,12 @@ function buildChapterUrl(bookId, chapterId, pageNo) {
 }
 
 function extractBookId(url) {
-    var match = normalizeUrl(url).match(/\/(?:xs_1|catalog_1)\/(\d+)/i);
+    var match = normalizeUrl(url).match(/\/(?:xs_\d+|catalog_\d+)\/(\d+)/i);
     return match ? match[1] : "";
 }
 
 function extractChapterInfo(url) {
-    var match = normalizeUrl(url).match(/\/xs_1\/(\d+)\/(\d+)(?:\/(\d+))?/i);
+    var match = normalizeUrl(url).match(/\/xs_\d+\/(\d+)\/(\d+)(?:\/(\d+))?/i);
     return {
         bookId: match ? match[1] : "",
         chapterId: match ? match[2] : "",
