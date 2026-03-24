@@ -2,7 +2,7 @@
   "metadata": {
     "name": "17 Tiểu thuyết",
     "author": "ivanzzz",
-    "version": 1,
+    "version": 2,
     "source": "https://m.1qxs.com/",
     "regexp": "(?:m\\.)?1qxs\\.com/xs_1/\\d+(?:/\\d+(?:/\\d+)?)?/?(?:\\?.*)?$",
     "description": "Doc truyen tren trang 1QXS",
