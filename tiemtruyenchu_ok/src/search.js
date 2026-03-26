@@ -1,102 +1,112 @@
-load('config.js');
+load("config.js");
+
+function parseNext(doc, page) {
+    let current = parseInt(page || "1", 10);
+    let min = Number.POSITIVE_INFINITY;
+
+    doc.select("a[href*='page=']").forEach(item => {
+        let href = item.attr("href") || "";
+        let matched = href.match(/[?&]page=(\d+)/);
+        if (!matched) return;
+
+        let value = parseInt(matched[1], 10);
+        if (value > current && value < min) {
+            min = value;
+        }
+    });
+
+    return min !== Number.POSITIVE_INFINITY ? String(min) : "";
+}
+
+function parseList(doc) {
+    let list = [];
+    let items = doc.select("#story-list-container .story-item");
+    if (items.size() === 0) items = doc.select(".story-item");
+
+    items.forEach(item => {
+        let titleEl = item.select("a.story-title").first();
+        if (!titleEl) titleEl = item.select("a[href*='/truyen/']").first();
+        if (!titleEl) titleEl = item.select("a").first();
+        if (!titleEl) return;
+
+        let link = ttcToAbsolute(titleEl.attr("href"));
+        let name = ttcTrim(titleEl.text().replace(/\s+/g, " "));
+
+        let coverEl = item.select("img.story-poster").first();
+        if (!coverEl) coverEl = item.select("img").first();
+        let cover = coverEl ? (coverEl.attr("data-src") || coverEl.attr("src") || "") : "";
+
+        let desc = ttcTrim(item.select(".story-desc").text());
+        if (!desc) desc = ttcTrim(item.select(".story-meta").text().replace(/\s+/g, " "));
+
+        if (!name || !link) return;
+        list.push({
+            name: name,
+            link: link,
+            cover: ttcToAbsolute(cover),
+            description: desc,
+            host: BASE_URL
+        });
+    });
+
+    return list;
+}
+
+function parseJsonResult(json, page) {
+    let list = [];
+
+    json.stories.forEach(item => {
+        let link = item.url || "";
+        if (!link && item.slug) link = "/truyen/" + item.slug;
+        if (!link) link = "/truyen/" + item.id;
+
+        list.push({
+            name: item.title || item.name || "",
+            link: ttcToAbsolute(link),
+            cover: ttcToAbsolute(item.poster || item.cover || ""),
+            description: item.author || "",
+            host: BASE_URL
+        });
+    });
+
+    let next = "";
+    let currentPage = parseInt(json.currentPage || page || "1", 10);
+    let totalPages = parseInt(json.totalPages || json.lastPage || "0", 10);
+    if (currentPage < totalPages) next = String(currentPage + 1);
+
+    return Response.success(list, next);
+}
 
 function execute(key, page) {
     if (!page) page = "1";
-    var url = BASE_URL + "/danh-sach?keyword=" + encodeURIComponent(key) + "&page=" + page + "&ajax=1";
 
-    let response = fetch(url);
-    if (response.ok) {
-        let json = response.json();
-        if (json.success && json.stories) {
-            let novelList = [];
+    let jsonUrl = BASE_URL + "/danh-sach?keyword=" + encodeURIComponent(key) + "&page=" + page + "&ajax=1";
+    let response = ttcFetch(jsonUrl);
 
-            json.stories.forEach(item => {
-                let link = "/truyen/" + item.id;
-                let cover = item.poster;
-                if (cover && !cover.startsWith("http")) {
-                    cover = BASE_URL + cover;
-                }
-                novelList.push({
-                    name: item.title,
-                    link: link,
-                    cover: cover,
-                    description: item.author,
-                    host: BASE_URL
-                });
-            });
-
-            let next = "";
-            let currentPage = parseInt(json.currentPage || page);
-            let totalPages = parseInt(json.totalPages || 0);
-
-            if (currentPage < totalPages) {
-                next = "" + (currentPage + 1);
+    if (response && response.ok) {
+        try {
+            let json = response.json();
+            if (json && json.success && json.stories) {
+                return parseJsonResult(json, page);
             }
+        } catch (error) {}
 
-            return Response.success(novelList, next);
-        } else {
-            // fallback structure
+        try {
             let doc = response.html();
-            let novelList = [];
-
-            doc.select(".story-item").forEach(function (e) {
-                let titleEl = e.select(".story-title").first();
-                if (!titleEl) {
-                    titleEl = e.select("a").first();
-                }
-                if (!titleEl) return;
-
-                let link = "";
-                let linkEl = e.select("a[href*='/truyen/']").first();
-                if (linkEl) {
-                    link = linkEl.attr("href");
-                } else {
-                    link = titleEl.attr("href");
-                }
-
-                let coverEl = e.select("img.story-poster").first();
-                if (!coverEl) {
-                    coverEl = e.select("img").first();
-                }
-                let cover = "";
-                if (coverEl) {
-                    cover = coverEl.attr("data-src");
-                    if (!cover) cover = coverEl.attr("src");
-                }
-
-                let desc = "";
-                let metaEl = e.select(".story-meta").first();
-                if (metaEl) desc = metaEl.text();
-
-                novelList.push({
-                    name: titleEl.text().trim(),
-                    link: link,
-                    cover: cover,
-                    description: desc,
-                    host: BASE_URL
-                });
-            });
-
-            // Pagination
-            let next = null;
-            let currentPage = page ? parseInt(page) : 1;
-            let pageLinks = doc.select(".pagination .page-link, .pagination a");
-            if (pageLinks.size() > 0) {
-                let lastLink = pageLinks.last();
-                let href = lastLink.attr("href");
-                if (href && href.indexOf("page=") !== -1) {
-                    let match = href.match(/page=(\d+)/);
-                    if (match && parseInt(match[1]) > currentPage) {
-                        next = "" + (currentPage + 1);
-                    }
-                }
+            if (!ttcIsLoginDocument(doc)) {
+                let list = parseList(doc);
+                let next = list.length > 0 ? parseNext(doc, page) : "";
+                return Response.success(list, next);
             }
-
-            if (novelList.length > 0) {
-                return Response.success(novelList, next);
-            }
-        }
+        } catch (error) {}
     }
 
-    return null;
+    let pageData = ttcFetchPage(BASE_URL + "/danh-sach?keyword=" + encodeURIComponent(key) + "&page=" + page, null, 12000);
+    if (!pageData || !pageData.doc || pageData.loginRequired) {
+        return Response.success([]);
+    }
+
+    let list = parseList(pageData.doc);
+    let next = list.length > 0 ? parseNext(pageData.doc, page) : "";
+    return Response.success(list, next);
 }
