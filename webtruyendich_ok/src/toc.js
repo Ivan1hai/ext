@@ -145,10 +145,10 @@ function execute(url) {
             if (novelId) {
                 // New API format logic with pagination limit
                 let page = 1;
-                const limit = 2000;
+                const limit = 10000;
                 let hasNext = true;
 
-                while (hasNext && page <= 10) { // Load up to 20k chapters max
+                while (hasNext && page <= 20) { // Load up to 20k chapters max
                     let apiEndpoint = BASE_URL + "/api/novels/" + novelId + "/chapters?source=" + source + "&page=" + page + "&limit=" + limit;
                     let sourceRes = fetch(apiEndpoint);
                     if (!sourceRes || !sourceRes.ok) break;

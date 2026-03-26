@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Web Truyện Dịch",
     "author": "ivanzzz",
-    "version": 1,
+    "version": 3,
     "source": "https://webtruyendich.com/",
     "regexp": "^https?://(www\\.)?webtruyendich\\.com/",
     "description": "Web Truyện Dịch",
