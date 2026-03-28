@@ -74,7 +74,7 @@
             "name": "MTC",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/mtc_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://metruyencv.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/mtc_ok/icon.png",
             "description": "Đọc truyện trên trang Mê Truyện CV",
@@ -122,6 +122,17 @@
             "source": "https://metruyenchu.co",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.co_ok/icon.png",
             "description": "Mê Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "QuyKiep",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/quykiep_ok/plugin.zip",
+            "version": 1,
+            "source": "https://quykiep.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/quykiep_ok/icon.png",
+            "description": "Mê Đọc Truyện Chữ Light Novel Online - Kho Tàng Light Novel Hay Nhất",
             "type": "novel",
             "locale": "vi_VN"
         },
