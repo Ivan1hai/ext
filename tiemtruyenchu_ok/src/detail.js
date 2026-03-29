@@ -59,12 +59,7 @@ function parseFromDoc(doc) {
         genreNames.push(title);
     });
 
-    let status = doc.select("span.tag-pill.text-success").text();
-    if (!status) {
-        let statusEl = doc.select(".story-meta .text-danger, .story-meta .text-success").first();
-        if (statusEl) status = statusEl.text();
-    }
-    status = normalizeStatus(status);
+    let status = "Dang ra";
 
     let detail = "";
     if (author) detail += "Tac gia: " + author + "<br>";
@@ -86,7 +81,7 @@ function parseFromDoc(doc) {
         detail: detail,
         host: BASE_URL,
         genres: genres,
-        ongoing: status === "Dang ra"
+        ongoing: true
     };
 }
 
@@ -145,7 +140,7 @@ function fromStoryData(story) {
         genreNames.push(title);
     });
 
-    let status = normalizeStatus(story.status || "");
+    let status = "Dang ra";
     let detail = "";
     if (author) detail += "Tac gia: " + author + "<br>";
     if (genreNames.length > 0) detail += "The loai: " + genreNames.join(", ") + "<br>";
@@ -169,7 +164,7 @@ function fromStoryData(story) {
         detail: detail,
         host: BASE_URL,
         genres: genres,
-        ongoing: status === "Dang ra"
+        ongoing: true
     };
 }
 
