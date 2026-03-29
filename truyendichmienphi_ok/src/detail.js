@@ -7,7 +7,7 @@ function execute(url) {
 
 	if (!data) return null;
 
-	const detail = `<p>Views: ${data.view_count}</p><p>Chapters: ${data.total_chapters}\n\n</p><p>Types: ${data.types.map((type) => type.name).join(", ")}</p>`;
+	const detail = `<p>Views: ${data.view_count}</p><p>Chapters: ${data.total_chapters}\n\n</p><p>Types: ${data.types.map((type) => type.name).join(", ")}</p><p>Trạng thái: Đang ra</p>`;
 
 	return Response.success({
 		name: data.title,
@@ -16,6 +16,6 @@ function execute(url) {
 		author: data.author_name,
 		description: data.description,
 		detail: detail,
-		ongoing: data.status !== "completed",
+		ongoing: true,
 	});
 }
