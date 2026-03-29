@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Truyện Dịch Miễn Phí",
+    "author": "ivanzzz",
+    "version": 2,
+    "source": "https://truyendichmienphi.com",
+    "regexp": "https://truyendichmienphi.com/(.*?)$",
+    "description": "Truyện Dịch Miễn Phí",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
