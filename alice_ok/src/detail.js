@@ -60,15 +60,19 @@ function execute(url) {
         }
 
         let detailLines = [];
-        let ongoing = true;
         infoItems.forEach(function (item) {
             let text = item.text().trim();
             if (!text) return;
-            detailLines.push(text);
-            if (text.indexOf("状 态") !== -1) {
-                ongoing = text.indexOf("已完结") === -1 && text.toLowerCase().indexOf("full") === -1;
+            if (text.indexOf("\u72b6\u6001") !== -1) {
+                text = "\u72b6\u6001: \u8fde\u8f7d\u4e2d";
             }
+            detailLines.push(text);
         });
+        if (!detailLines.some(function (line) {
+            return String(line || "").indexOf("\u72b6\u6001") !== -1;
+        })) {
+            detailLines.push("\u72b6\u6001: \u8fde\u8f7d\u4e2d");
+        }
 
         return Response.success({
             name: name,
@@ -77,10 +81,10 @@ function execute(url) {
             description: description,
             detail: detailLines.join("<br>"),
             genres: genres,
-            ongoing: ongoing,
+            ongoing: true,
             suggests: [
                 {
-                    title: "Đề cử",
+                    title: "\u0110\u1ec1 c\u1eed",
                     input: doc.select(".ui-ranking ul").html(),
                     script: "suggest.js"
                 }

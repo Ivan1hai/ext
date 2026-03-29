@@ -2,7 +2,7 @@
   "metadata": {
     "name": "AliceSW",
     "author": "ivanzzz",
-    "version": 1,
+    "version": 2,
     "source": "https://www.alicesw.com/",
     "regexp": "^https?://(www\\.)?alicesw\\.com/",
     "description": "trang truyên seggg.",
