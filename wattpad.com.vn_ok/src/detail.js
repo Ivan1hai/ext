@@ -11,8 +11,21 @@ function execute(url) {
 
     infoItems.forEach(function (item) {
         var text = cleanText(item.text());
-        if (text) detailLines.push(text);
+        if (!text) return;
+
+        var lower = text.toLowerCase();
+        if (lower.indexOf("tr\u1ea1ng th\u00e1i") === 0 || lower.indexOf("t\u00ecnh tr\u1ea1ng") === 0) {
+            text = "Tr\u1ea1ng th\u00e1i: \u0110ang ra";
+        }
+
+        detailLines.push(text);
     });
+    if (!detailLines.some(function (line) {
+        var lower = String(line || "").toLowerCase();
+        return lower.indexOf("tr\u1ea1ng th\u00e1i") === 0 || lower.indexOf("t\u00ecnh tr\u1ea1ng") === 0;
+    })) {
+        detailLines.push("Tr\u1ea1ng th\u00e1i: \u0110ang ra");
+    }
 
     doc.select(".li--genres a").forEach(function (item) {
         var title = cleanText(item.text());
@@ -37,12 +50,6 @@ function execute(url) {
     var descriptionNode = doc.select("#gioithieu .scrolltext").first();
     var description = descriptionNode ? descriptionNode.html() : "";
 
-    var statusNode = doc.select(".label-status").first();
-    var ongoing = true;
-    if (statusNode) {
-        ongoing = isOngoingStatus(statusNode.text());
-    }
-
     return Response.success({
         name: cleanText(doc.select(".mRightCol h1").text()),
         cover: absoluteUrl(doc.select(".book-info-pic img").attr("src")),
@@ -50,7 +57,7 @@ function execute(url) {
         description: description,
         detail: detailLines.join("<br>"),
         host: BASE_URL,
-        ongoing: ongoing,
+        ongoing: true,
         genres: genres
     });
 }
