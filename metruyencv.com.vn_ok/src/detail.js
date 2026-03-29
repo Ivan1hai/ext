@@ -11,8 +11,21 @@ function execute(url) {
 
     infoItems.forEach(function (item) {
         var text = cleanText(item.text());
-        if (text) detailLines.push(text);
+        if (!text) return;
+
+        var lower = text.toLowerCase();
+        if (lower.indexOf("tr\u1ea1ng th\u00e1i") === 0 || lower.indexOf("t\u00ecnh tr\u1ea1ng") === 0) {
+            text = "Tr\u1ea1ng th\u00e1i: \u0110ang ra";
+        }
+
+        detailLines.push(text);
     });
+    if (!detailLines.some(function (line) {
+        var lower = String(line || "").toLowerCase();
+        return lower.indexOf("tr\u1ea1ng th\u00e1i") === 0 || lower.indexOf("t\u00ecnh tr\u1ea1ng") === 0;
+    })) {
+        detailLines.push("Tr\u1ea1ng th\u00e1i: \u0110ang ra");
+    }
 
     doc.select(".li--genres a").forEach(function (item) {
         var title = cleanText(item.text());
@@ -41,7 +54,7 @@ function execute(url) {
         description: description,
         detail: detailLines.join("<br>"),
         host: BASE_URL,
-        ongoing: doc.select(".label-status.label-updating").size() > 0,
+        ongoing: true,
         genres: genres
     });
 }

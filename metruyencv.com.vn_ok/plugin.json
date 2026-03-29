@@ -2,7 +2,7 @@
   "metadata": {
     "name": "MeTruyenCV",
     "author": "ivanzzz",
-    "version": 1,
+    "version": 2,
     "source": "https://metruyencv.com.vn/",
     "regexp": "(www\\.)?metruyencv\\.com\\.vn/[^/]+(?:/chuong-[^/?#]+)?/?$",
     "description": "Doc truyen tren MeTruyenCV",
