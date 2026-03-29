@@ -181,6 +181,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Truyện Full",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.vison_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenfull.vision",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.vison_ok/icon.png",
+            "description": "Đọc truyện trên trang Truyện Full",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Truyện Mới KK",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenmoikk_ok/plugin.zip",
