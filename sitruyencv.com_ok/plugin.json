@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Si Truyện CV",
+    "author": "ivanzzz",
+    "version": 1,
+    "source": "https://sitruyencv.com/",
+    "regexp": "(www\\.)?sitruyencv\\.com/(?:story/\\d+-[^/?#]+|read/\\d+/\\d+)(?:\\?[^#]*)?/?$",
+    "description": "Đọc truyện trên SiTruyenCV",
+    "locale": "vi_VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

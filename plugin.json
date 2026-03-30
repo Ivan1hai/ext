@@ -137,6 +137,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Si Truyện CV",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/sitruyencv.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://sitruyencv.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/sitruyencv.com_ok/icon.png",
+            "description": "Đọc truyện trên SiTruyenCV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Tiệm Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/plugin.zip",
