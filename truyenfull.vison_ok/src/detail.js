@@ -29,7 +29,7 @@ function execute(url) {
             cover: doc.select("div.book img").attr("src"),
             author: doc.select("div.info div a").first().text(),
             description: doc.select("div.desc-text").html(),
-            detail: "Trang thai: Dang ra",
+            detail: "Trang thai: Đang ra",
             ongoing: true,
             genres: genres,
             suggests: suggests,
