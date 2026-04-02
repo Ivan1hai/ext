@@ -60,6 +60,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Kho Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/khotruyenchu.click_ok/plugin.zip",
+            "version": 1,
+            "source": "https://khotruyenchu.click/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/khotruyenchu.click_ok/icon.png",
+            "description": "Đọc truyện trên Kho Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "La Cà Truyện",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lacatruyen_ok/plugin.zip",
@@ -155,6 +166,17 @@
             "source": "https://www.tiemtruyenchu.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/icon.png",
             "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Trang Truyện",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/trangtruyen.site_ok/plugin.zip",
+            "version": 1,
+            "source": "https://trangtruyen.site/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/trangtruyen.site_ok/icon.png",
+            "description": "Đọc truyện trên Trang Truyện. Cần cookie đăng nhập để đọc chương.",
             "type": "novel",
             "locale": "vi_VN"
         },
