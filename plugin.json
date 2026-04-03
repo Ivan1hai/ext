@@ -294,7 +294,7 @@
             "name": "Wiki Dịch",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wikicv.net/plugin.zip",
-            "version": 2,
+            "version": 3,
             "source": "https://wikicv.net",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wikicv.net/icon.png",
             "description": "Đọc truyện trên trang Wiki Dịch",
