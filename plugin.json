@@ -107,7 +107,7 @@
             "name": "LN Kuro",
             "author": "ivanzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://lnkuro.top/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/icon.png",
             "description": "Đọc truyện trên trang LN Kuro",
@@ -188,6 +188,17 @@
             "source": "https://truyenhoan.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenhoan.com_ok/icon.png",
             "description": "Doc truyen tren trang Truyen Hoan",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "TruyenAudioCV",
+            "author": "B",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenaudiocv.org",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/icon.png",
+            "description": "Doc va nghe truyen tren TruyenAudioCV",
             "type": "novel",
             "locale": "vi_VN"
         },
@@ -298,17 +309,6 @@
             "source": "https://xalosach.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/xalosach_ok/icon.png",
             "description": "Xalosach.com là nền tảng đọc truyện chữ online, truyện dịch hay nhiều thể loại.",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
-            "name": "LN Kuro",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/plugin.zip",
-            "version": 1,
-            "source": "https://lnkuro.top/",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/icon.png",
-            "description": "Đọc truyện trên trang LN Kuro",
             "type": "novel",
             "locale": "vi_VN"
         }
