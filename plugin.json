@@ -60,17 +60,6 @@
             "locale": "vi-VN"
         },
         {
-            "name": "Cà Chua",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/ok_fanqienovel.com/plugin.zip",
-            "version": 8,
-            "source": "https://fanqienovel.com",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/ok_fanqienovel.com/icon.png",
-            "description": "Cà Chua",
-            "type": "chinese_novel",
-            "locale": "zh_CN"
-        },
-        {
             "name": "Hang Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/plugin.zip",
@@ -170,6 +159,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Si Truyện CV",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/sitruyencv.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://sitruyencv.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/sitruyencv.com_ok/icon.png",
+            "description": "Đọc truyện trên SiTruyenCV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Tiệm Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/plugin.zip",
@@ -188,17 +188,6 @@
             "source": "https://truyenhoan.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenhoan.com_ok/icon.png",
             "description": "Doc truyen tren trang Truyen Hoan",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
-            "name": "TruyenAudioCV",
-            "author": "B",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/plugin.zip",
-            "version": 1,
-            "source": "https://truyenaudiocv.org",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/icon.png",
-            "description": "Doc va nghe truyen tren TruyenAudioCV",
             "type": "novel",
             "locale": "vi_VN"
         },
@@ -265,17 +254,6 @@
             "source": "https://truyen.tangthuvien.vn",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyen.tangthuvien.vn_ok/icon.png",
             "description": "Đọc truyện tại Tàng Thư Viện",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
-            "name": "Valvrareteam",
-            "author": "ivazzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/plugin.zip",
-            "version": 2,
-            "source": "https://valvrareteam.net",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/icon.png",
-            "description": "Valvrareteam - Doc Light Novel Vietsub Mien Phi",
             "type": "novel",
             "locale": "vi_VN"
         },
