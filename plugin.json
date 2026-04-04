@@ -104,6 +104,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "LN Kuro",
+            "author": "ivanzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/plugin.zip",
+            "version": 1,
+            "source": "https://lnkuro.top/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/icon.png",
+            "description": "Đọc truyện trên trang LN Kuro",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "MeTruyenCV",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.com.vn_ok/plugin.zip",
@@ -247,6 +258,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Valvrareteam",
+            "author": "codex",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/plugin.zip",
+            "version": 2,
+            "source": "https://valvrareteam.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/icon.png",
+            "description": "Valvrareteam - Doc Light Novel Vietsub Mien Phi",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Wattpad",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wattpad.com.vn_ok/plugin.zip",
@@ -276,6 +298,17 @@
             "source": "https://xalosach.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/xalosach_ok/icon.png",
             "description": "Xalosach.com là nền tảng đọc truyện chữ online, truyện dịch hay nhiều thể loại.",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "LN Kuro",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/plugin.zip",
+            "version": 1,
+            "source": "https://lnkuro.top/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/icon.png",
+            "description": "Đọc truyện trên trang LN Kuro",
             "type": "novel",
             "locale": "vi_VN"
         }
