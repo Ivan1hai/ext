@@ -94,9 +94,9 @@
         },
         {
             "name": "LN Kuro",
-            "author": "ivanzz",
+            "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/plugin.zip",
-            "version": 3,
+            "version": 4,
             "source": "https://lnkuro.top/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lnkuro.top_ok/icon.png",
             "description": "Đọc truyện trên trang LN Kuro",
@@ -192,6 +192,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "TruyenAudioCV",
+            "author": "B",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/plugin.zip",
+            "version": 3,
+            "source": "https://truyenaudiocv.org",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv.org_ok/icon.png",
+            "description": "Doc va nghe truyen tren TruyenAudioCV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Truyện Chữ Hay",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/plugin.zip",
@@ -254,6 +265,17 @@
             "source": "https://truyen.tangthuvien.vn",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyen.tangthuvien.vn_ok/icon.png",
             "description": "Đọc truyện tại Tàng Thư Viện",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Valvrareteam",
+            "author": "codex",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/plugin.zip",
+            "version": 3,
+            "source": "https://valvrareteam.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/icon.png",
+            "description": "Valvrareteam - Doc Light Novel Vietsub Mien Phi",
             "type": "novel",
             "locale": "vi_VN"
         },
