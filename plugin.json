@@ -60,6 +60,17 @@
             "locale": "vi-VN"
         },
         {
+            "name": "Dâm Cô Nương",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo_ok/plugin.zip",
+            "version": 1,
+            "source": "https://damconuong.ceo/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo_ok/icon.png",
+            "description": "Doc truyen tren trang Dam Co Nuong",
+            "type": "comic",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Hang Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/plugin.zip",
