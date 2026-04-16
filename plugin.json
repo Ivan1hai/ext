@@ -60,6 +60,17 @@
             "locale": "vi-VN"
         },
         {
+            "name": "Dam Co Nuong",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo/plugin.zip",
+            "version": 1,
+            "source": "https://damconuong.ceo/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo/icon.png",
+            "description": "Doc truyen tren trang Dam Co Nuong",
+            "type": "comic",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Hang Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/plugin.zip",
@@ -115,10 +126,10 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Mê Truyện Chữ",
+            "name": "Mê Truyện Chữ .co",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.co_ok/plugin.zip",
-            "version": 2,
+            "version": 3,
             "source": "https://metruyenchu.co",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.co_ok/icon.png",
             "description": "Mê Truyện Chữ",
@@ -126,10 +137,10 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Mê Truyện Chữ",
+            "name": "Mê Truyện Chữ .com.vn",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.com.vn_ok/plugin.zip",
-            "version": 3,
+            "version": 4,
             "source": "https://metruyenchu.com.vn/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyenchu.com.vn_ok/icon.png",
             "description": "Đọc truyện trên Mê Truyện Chữ",
@@ -266,6 +277,28 @@
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyen.tangthuvien.vn_ok/icon.png",
             "description": "Đọc truyện tại Tàng Thư Viện",
             "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Valvrareteam",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/plugin.zip",
+            "version": 1,
+            "source": "https://valvrareteam.net/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/valvrareteam.net_ok/icon.png",
+            "description": "Doc light novel tren Valvrareteam",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "vi-Hentai",
+            "author": "Kou",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/vi-hentai.pro/plugin.zip",
+            "version": 4,
+            "source": "https://vi-hentai.pro/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/vi-hentai.pro/icon.png",
+            "description": "Đọc truyện trên trang vi-Hentai",
+            "type": "comic",
             "locale": "vi_VN"
         },
         {
