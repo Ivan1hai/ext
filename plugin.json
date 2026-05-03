@@ -96,8 +96,8 @@
             "name": "La Cà Truyện",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lacatruyen_ok/plugin.zip",
-            "version": 2,
-            "source": "https://lacatruyen.club",
+            "version": 3,
+            "source": "https://lacatruyen.pro",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/lacatruyen_ok/icon.png",
             "description": "Đọc truyện tại La Cà Truyện",
             "type": "novel",
@@ -199,6 +199,17 @@
             "source": "https://truyenhoan.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenhoan.com_ok/icon.png",
             "description": "Doc truyen tren trang Truyen Hoan",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "TruyenAudioCV",
+            "author": "Hệ thống",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv_ok/plugin.zip",
+            "version": 2,
+            "source": "https://truyenaudiocv.org/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv_ok/icon.png",
+            "description": "Đọc tóm tắt và review truyện trên TruyenAudioCV",
             "type": "novel",
             "locale": "vi_VN"
         },
