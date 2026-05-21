@@ -60,17 +60,6 @@
             "locale": "vi-VN"
         },
         {
-            "name": "Dâm Cô Nương",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo_ok/plugin.zip",
-            "version": 1,
-            "source": "https://damconuong.ceo/",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/damconuong.ceo_ok/icon.png",
-            "description": "Doc truyen tren trang Dam Co Nuong",
-            "type": "comic",
-            "locale": "vi_VN"
-        },
-        {
             "name": "Hang Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/plugin.zip",
@@ -203,17 +192,6 @@
             "locale": "vi_VN"
         },
         {
-            "name": "TruyenAudioCV",
-            "author": "Hệ thống",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv_ok/plugin.zip",
-            "version": 2,
-            "source": "https://truyenaudiocv.org/",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenaudiocv_ok/icon.png",
-            "description": "Đọc tóm tắt và review truyện trên TruyenAudioCV",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
             "name": "Truyện Chữ Hay",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/plugin.zip",
@@ -238,10 +216,10 @@
         {
             "name": "Truyện Full",
             "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.vison_ok/plugin.zip",
-            "version": 2,
-            "source": "https://truyenfull.vision",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.vison_ok/icon.png",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.today_ok/plugin.zip",
+            "version": 3,
+            "source": "https://truyenfull.today",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenfull.today_ok/icon.png",
             "description": "Đọc truyện trên trang Truyện Full",
             "type": "novel",
             "locale": "vi_VN"
@@ -251,7 +229,7 @@
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenmoikk_ok/plugin.zip",
             "version": 2,
-            "source": "https://truyenmoikk.com",
+            "source": "https://truyenmoiss.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenmoikk_ok/icon.png",
             "description": "Cào dữ liệu từ truyenmoikk.com",
             "type": "novel",
