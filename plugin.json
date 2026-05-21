@@ -192,6 +192,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "TruyenDich.AI",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyendich.ai_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyendich.ai",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyendich.ai_ok/icon.png",
+            "description": "Doc truyen tai TruyenDich.AI",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Truyện Chữ Hay",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/truyenchuhay_ok/plugin.zip",
