@@ -104,6 +104,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Matt Reading Translations",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/mattreadingtranslations.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://mattreadingtranslations.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/mattreadingtranslations.com_ok/icon.png",
+            "description": "Doc truyen tu MattReadingTranslations",
+            "type": "novel",
+            "locale": "en_US"
+        },
+        {
             "name": "MeTruyenCV",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.com.vn_ok/plugin.zip",
@@ -112,6 +123,17 @@
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/metruyencv.com.vn_ok/icon.png",
             "description": "Doc truyen tren MeTruyenCV",
             "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "MotChill",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/motchillzc.cc_ok/plugin.zip",
+            "version": 1,
+            "source": "https://motchillzc.cc/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/motchillzc.cc_ok/icon.png",
+            "description": "Xem phim online Vietsub, Thuyết minh trên MotChill",
+            "type": "video",
             "locale": "vi_VN"
         },
         {
