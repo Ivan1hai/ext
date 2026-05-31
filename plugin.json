@@ -291,6 +291,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "Việt Nam Thư Quán",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/vnthuquan.org_ok/plugin.zip",
+            "version": 1,
+            "source": "https://vnthuquan.org/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/vnthuquan.org_ok/icon.png",
+            "description": "Đọc truyện từ Việt Nam Thư Quán",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
             "name": "Wattpad",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/wattpad.com.vn_ok/plugin.zip",
