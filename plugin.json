@@ -38,6 +38,17 @@
             "locale": "zh_CN"
         },
         {
+            "name": "AllNovel",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/allnovel.org_ok/plugin.zip",
+            "version": 1,
+            "source": "https://allnovel.org",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/allnovel.org_ok/icon.png",
+            "description": "Read novels on AllNovel",
+            "type": "novel",
+            "locale": "en_US"
+        },
+        {
             "name": "bFaloo (飞卢小说)",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/bfaloo_ok/plugin.zip",
@@ -170,6 +181,17 @@
             "locale": "vi_VN"
         },
         {
+            "name": "NovelNext",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novelnext.me_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.novelnext.me",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novelnext.me_ok/icon.png",
+            "description": "Read novels on NovelNext",
+            "type": "novel",
+            "locale": "en_US"
+        },
+        {
             "name": "QuyKiep",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/quykiep_ok/plugin.zip",
@@ -195,7 +217,7 @@
             "name": "Tiệm Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/plugin.zip",
-            "version": 4,
+            "version": 6,
             "source": "https://www.tiemtruyenchu.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/tiemtruyenchu_ok/icon.png",
             "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",
