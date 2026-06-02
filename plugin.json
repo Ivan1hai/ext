@@ -71,6 +71,17 @@
             "locale": "vi-VN"
         },
         {
+            "name": "FanMTL",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/fanmtl.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.fanmtl.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/fanmtl.com_ok/icon.png",
+            "description": "Read Fan-Fiction & Web Novels on FanMTL",
+            "type": "novel",
+            "locale": "en_US"
+        },
+        {
             "name": "Hang Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/hangtruyenchu_ok/plugin.zip",
@@ -179,6 +190,17 @@
             "description": "Đọc truyện trên trang Mê Truyện CV",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "NovelFull",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novelfull.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://novelfull.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novelfull.com_ok/icon.png",
+            "description": "Read novels on NovelFull",
+            "type": "novel",
+            "locale": "en_US"
         },
         {
             "name": "NovelNext",
