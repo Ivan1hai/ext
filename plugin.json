@@ -410,6 +410,17 @@
             "description": "Xalosach.com là nền tảng đọc truyện chữ online, truyện dịch hay nhiều thể loại.",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Phim Nhua",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/phimnhua_ok/plugin.zip",
+            "version": 1,
+            "source": "https://phimnhua.online",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/phimnhua_ok/icon.png",
+            "description": "Xem phim tren Phim Nhua - HD Vietsub mien phi.",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
