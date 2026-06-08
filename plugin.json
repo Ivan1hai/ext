@@ -107,7 +107,7 @@
             "name": "MotChill",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/motchillzc.cc_ok/plugin.zip",
-            "version": 2,
+            "version": 3,
             "source": "https://motchillzc.cc/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/motchillzc.cc_ok/icon.png",
             "description": "Xem phim online Vietsub, Thuyết minh trên MotChill",
@@ -412,7 +412,7 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Phim Nhua",
+            "name": "Phim Nhựa",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/phimnhua_ok/plugin.zip",
             "version": 3,
