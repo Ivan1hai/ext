@@ -421,6 +421,17 @@
             "description": "Xem phim tren Phim Nhua - HD Vietsub mien phi.",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Phimmoir",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/phimmoir.app_ok/plugin.zip",
+            "version": 1,
+            "source": "https://phimmoir.app",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/phimmoir.app_ok/icon.png",
+            "description": "Xem phim online Vietsub, Thuyet minh tren Phimmoir",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
