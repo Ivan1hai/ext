@@ -432,6 +432,17 @@
             "description": "Xem phim online Vietsub, Thuyet minh tren Phimmoir",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "69shuba",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/69shuba_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.69shuba.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/69shuba_ok/icon.png",
+            "description": "69书吧 - 69shuba.com",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
         }
     ]
 }
