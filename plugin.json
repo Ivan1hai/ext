@@ -107,7 +107,7 @@
             "name": "MotChill",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/motchillzc.cc_ok/plugin.zip",
-            "version": 3,
+            "version": 4,
             "source": "https://motchillzc.cc/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/motchillzc.cc_ok/icon.png",
             "description": "Xem phim online Vietsub, Thuyết minh trên MotChill",
@@ -210,17 +210,6 @@
             "source": "https://metruyenchu.co",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyenchu.co_ok/icon.png",
             "description": "Mê Truyện Chữ",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
-            "name": "MeTruyenCV",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyencv.com.vn_ok/plugin.zip",
-            "version": 4,
-            "source": "https://metruyencv.com.vn/",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyencv.com.vn_ok/icon.png",
-            "description": "Doc truyen tren MeTruyenCV",
             "type": "novel",
             "locale": "vi_VN"
         },
