@@ -432,6 +432,17 @@
             "description": "69书吧 - 69shuba.com",
             "type": "chinese_novel",
             "locale": "zh_CN"
+        },
+        {
+            "name": "Mê Truyện CV",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyencv.com.vn_ok/plugin.zip",
+            "version": 5,
+            "source": "https://metruyencv.com.vn/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyencv.com.vn_ok/icon.png",
+            "description": "Doc truyen tren MeTruyenCV",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
