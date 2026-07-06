@@ -432,6 +432,17 @@
             "description": "Doc truyen tren MeTruyenCV",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Hang Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/plugin.zip",
+            "version": 1,
+            "source": "https://hangtruyenchu.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/icon.png",
+            "description": "Đọc truyện tại Hang Truyện Chữ",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
