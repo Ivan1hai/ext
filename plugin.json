@@ -137,17 +137,6 @@
             "locale": "vi-VN"
         },
         {
-            "name": "Hang Truyện Chữ",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/plugin.zip",
-            "version": 3,
-            "source": "https://hangtruyenchu.com",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/icon.png",
-            "description": "Đọc truyện tại Hang Truyện Chữ",
-            "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
             "name": "Kho Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/khotruyenchu.fun_ok/plugin.zip",
@@ -441,6 +430,17 @@
             "source": "https://metruyencv.com.vn/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/metruyencv.com.vn_ok/icon.png",
             "description": "Doc truyen tren MeTruyenCV",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Hang Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/plugin.zip",
+            "version": 4,
+            "source": "https://hangtruyenchu.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/hangtruyenchu_ok/icon.png",
+            "description": "Đọc truyện tại Hang Truyện Chữ",
             "type": "novel",
             "locale": "vi_VN"
         }
