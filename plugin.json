@@ -443,6 +443,17 @@
             "description": "Đọc truyện tại Hang Truyện Chữ",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Truyện CV (.io)",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyencv.io_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyencv.io/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyencv.io_ok/icon.png",
+            "description": "Đọc truyện trên truyencv.io",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
