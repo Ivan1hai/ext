@@ -454,6 +454,17 @@
             "description": "Đọc truyện trên truyencv.io",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Tu Tiên Pro",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien.pro_ok/plugin.zip",
+            "version": 1,
+            "source": "https://tutien.pro",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien.pro_ok/icon.png",
+            "description": "Tu Tiên Pro - tutien.pro (Tiểu Tu Tiên - Nền tảng mở đọc truyện)",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
