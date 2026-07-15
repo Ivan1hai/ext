@@ -456,13 +456,13 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Tu Tiên Pro",
+            "name": "Tu Tiên (.pro)",
             "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien.pro_ok/plugin.zip",
-            "version": 1,
-            "source": "https://tutien.pro",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien.pro_ok/icon.png",
-            "description": "Tu Tiên Pro - tutien.pro (Tiểu Tu Tiên - Nền tảng mở đọc truyện)",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien_ok/plugin.zip",
+            "version": 2,
+            "source": "https://tutien.pro/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tutien_ok/icon.png",
+            "description": "Đọc truyện trên tutien.pro",
             "type": "novel",
             "locale": "vi_VN"
         }
