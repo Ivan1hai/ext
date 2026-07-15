@@ -465,6 +465,17 @@
             "description": "Đọc truyện trên tutien.pro",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Truyen H",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenh.top_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenh.top/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenh.top_ok/icon.png",
+            "description": "Đọc truyện H trên truyenh.top (WordPress, lich-slg-style)",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
