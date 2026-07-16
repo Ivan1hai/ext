@@ -74,11 +74,11 @@
             "name": "Matt Reading Translations",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/mattreadingtranslations.com_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://mattreadingtranslations.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/mattreadingtranslations.com_ok/icon.png",
             "description": "Doc truyen tu MattReadingTranslations",
-            "type": "novel",
+            "type": "eng_novel",
             "locale": "en_US"
         },
         {
