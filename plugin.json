@@ -316,7 +316,7 @@
             "name": "Truyện Mới KK",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenmoikk_ok/plugin.zip",
-            "version": 3,
+            "version": 4,
             "source": "https://truyenmoikk.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenmoikk_ok/icon.png",
             "description": "Cào dữ liệu từ truyenmoikk.com",
@@ -475,6 +475,17 @@
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenh.top_ok/icon.png",
             "description": "Đọc truyện H trên truyenh.top (WordPress, lich-slg-style)",
             "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "Gú Phim",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/guphim_ok/plugin.zip",
+            "version": 1,
+            "source": "https://guphim.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/guphim_ok/icon.png",
+            "description": "Xem phim online miễn phí trên guphim.com",
+            "type": "video",
             "locale": "vi_VN"
         }
     ]
