@@ -217,10 +217,10 @@
             "name": "QuyKiep",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/quykiep_ok/plugin.zip",
-            "version": 3,
+            "version": 5,
             "source": "https://quykiep.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/quykiep_ok/icon.png",
-            "description": "Mê Đọc Truyện Chữ Light Novel Online - Kho Tàng Light Novel Hay Nhất",
+            "description": "Đọc truyện trên QuyKiep.com",
             "type": "novel",
             "locale": "vi_VN"
         },
@@ -475,17 +475,6 @@
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenh.top_ok/icon.png",
             "description": "Đọc truyện H trên truyenh.top (WordPress, lich-slg-style)",
             "type": "novel",
-            "locale": "vi_VN"
-        },
-        {
-            "name": "Gú Phim",
-            "author": "ivanzzz",
-            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/guphim_ok/plugin.zip",
-            "version": 1,
-            "source": "https://guphim.com/",
-            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/movie/guphim_ok/icon.png",
-            "description": "Xem phim online miễn phí trên guphim.com",
-            "type": "video",
             "locale": "vi_VN"
         }
     ]
