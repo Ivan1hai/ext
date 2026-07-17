@@ -476,6 +476,17 @@
             "description": "Đọc truyện H trên truyenh.top (WordPress, lich-slg-style)",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Phimtv",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/phimtv_ok/plugin.zip",
+            "version": 1,
+            "source": "https://phimtv.cv",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/phimtv_ok/icon.png",
+            "description": "Xem phim trên phimtv.cv",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
