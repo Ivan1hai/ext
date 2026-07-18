@@ -487,6 +487,17 @@
             "description": "Xem phim trên phimtv.cv",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "GuPhim",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/guphim.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://guphim.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/guphim.com_ok/icon.png",
+            "description": "Xem phim tren guphim.com",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
