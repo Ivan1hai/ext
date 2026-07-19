@@ -498,6 +498,17 @@
             "description": "Xem phim tren guphim.com",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "XTruyen",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/xtruyen_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.xtruyen.net/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/xtruyen_ok/icon.png",
+            "description": "XTruyen - Doc truyen online",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
