@@ -148,24 +148,24 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Kho Truyá»‡n Chá»¯",
+            "name": "Kho Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/khotruyenchu.me_ok/plugin.zip",
             "version": 1,
             "source": "https://khotruyenchu.me/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/khotruyenchu.me_ok/icon.png",
-            "description": "Äá»c truyá»‡n trÃªn Kho Truyá»‡n Chá»¯",
+            "description": "Đọc truyện trên Kho Truyện Chữ",
             "type": "novel",
             "locale": "vi_VN"
         },
         {
-            "name": "La Cà Truyện",
+            "name": "La cà Truyện",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lacatruyen_ok/plugin.zip",
             "version": 5,
-            "source": "https://lacatruyen.casa",
+            "source": "https://lacatruyen.world/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lacatruyen_ok/icon.png",
-            "description": "Đọc truyện tại La Cà Truyện",
+            "description": "Đọc truyện trên La cà Truyện",
             "type": "novel",
             "locale": "vi_VN"
         },
@@ -272,7 +272,7 @@
             "name": "TruyenDich.AI",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyendich.ai_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://truyendich.ai",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyendich.ai_ok/icon.png",
             "description": "Doc truyen tai TruyenDich.AI",
