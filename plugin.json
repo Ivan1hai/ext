@@ -239,7 +239,7 @@
             "name": "Tiệm Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tiemtruyenchu_ok/plugin.zip",
-            "version": 5,
+            "version": 6,
             "source": "https://www.tiemtruyenchu.com/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tiemtruyenchu_ok/icon.png",
             "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",
@@ -507,6 +507,17 @@
             "source": "https://www.xtruyen.net/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/xtruyen_ok/icon.png",
             "description": "XTruyen - Doc truyen online",
+            "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "App Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/apptruyenchu_ok/plugin.zip",
+            "version": 1,
+            "source": "https://apptruyenchu.pro/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/apptruyenchu_ok/icon.png",
+            "description": "App Truyện Chữ - Truyện Dịch & Truyện Convert. Next.js App Router + Firebase backend.",
             "type": "novel",
             "locale": "vi_VN"
         }
