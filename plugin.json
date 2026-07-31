@@ -520,6 +520,17 @@
             "description": "App Truyện Chữ - Truyện Dịch & Truyện Convert. Next.js App Router + Firebase backend.",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "allin1",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/allin1_ok/plugin.zip",
+            "version": 1,
+            "source": "http://14.225.254.182/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/allin1_ok/icon.png",
+            "description": "Đọc truyện trên Sáng Tác Việt - nền tảng văn học mạng mở",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
