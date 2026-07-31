@@ -514,7 +514,7 @@
             "name": "App Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/apptruyenchu_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://apptruyenchu.pro/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/apptruyenchu_ok/icon.png",
             "description": "App Truyện Chữ - Truyện Dịch & Truyện Convert. Next.js App Router + Firebase backend.",
