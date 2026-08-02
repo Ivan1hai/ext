@@ -534,9 +534,9 @@
         },
         {
             "name": "Thế Giới Truyện",
-            "author": "vBook",
+            "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/thegioitruyen_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://thegioitruyen.vn",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/thegioitruyen_ok/icon.png",
             "description": "Đọc truyện tranh online từ thegioitruyen.vn",
