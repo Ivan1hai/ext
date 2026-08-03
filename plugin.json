@@ -542,6 +542,17 @@
             "description": "Đọc truyện tranh online từ thegioitruyen.vn",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "TruyenGG",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/truyenggvn_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenggvn.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/truyenggvn_ok/icon.png",
+            "description": "TruyenGGVN - Đọc truyện tranh Manhwa, Manhua, Manga Online",
+            "type": "comic",
+            "locale": "vi_VN"
         }
     ]
 }
