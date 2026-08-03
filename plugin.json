@@ -553,6 +553,17 @@
             "description": "TruyenGGVN - Đọc truyện tranh Manhwa, Manhua, Manga Online",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "NetTruyenZ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/nettruyenz_ok/plugin.zip",
+            "version": 1,
+            "source": "https://nettruyenz.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/nettruyenz_ok/icon.png",
+            "description": "NetTruyen - Đọc truyện tranh Manga, Manhua, Manhwa online miễn phí",
+            "type": "comic",
+            "locale": "vi_VN"
         }
     ]
 }
