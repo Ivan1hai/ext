@@ -564,6 +564,17 @@
             "description": "NetTruyen - Đọc truyện tranh Manga, Manhua, Manhwa online miễn phí",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "NetTruyen18",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/nettruyen18_ok/plugin.zip",
+            "version": 1,
+            "source": "https://nettruyen18.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/nettruyen18_ok/icon.png",
+            "description": "NetTruyen18 - truyện tranh online",
+            "type": "comic",
+            "locale": "vi_VN"
         }
     ]
 }
