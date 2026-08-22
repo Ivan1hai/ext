@@ -575,6 +575,17 @@
             "description": "NetTruyen18 - truyện tranh online",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "MonkeyD",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/monkeydd.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://monkeydd.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/monkeydd.com_ok/icon.png",
+            "description": "Đọc truyện trên MonkeyD",
+            "type": "novel",
+            "locale": "vi-VN"
         }
     ]
 }
