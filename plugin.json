@@ -586,6 +586,17 @@
             "description": "Đọc truyện trên MonkeyD",
             "type": "novel",
             "locale": "vi-VN"
+        },
+        {
+            "name": "Truyện Chữ",
+            "author": "vBook",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenchu.net_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenchu.net/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenchu.net_ok/icon.png",
+            "description": "Đọc truyện chữ trên Truyện Chữ.",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
