@@ -608,6 +608,17 @@
             "description": "Read novels on NovelFull.Net (uses Browser engine to bypass Cloudflare)",
             "type": "eng_novel",
             "locale": "en_US"
+        },
+        {
+            "name": "Dịch Tiếng Hoa",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/dichtienghoa_ok/plugin.zip",
+            "version": 1,
+            "source": "https://dichtienghoa.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/dichtienghoa_ok/icon.png",
+            "description": "Dịch Tiếng Hoa - kho tàng truyện Trung Quốc dịch thuật",
+            "type": "chinese_novel",
+            "locale": "vi_VN"
         }
     ]
 }
