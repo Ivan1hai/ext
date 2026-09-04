@@ -597,6 +597,17 @@
             "description": "Đọc truyện chữ trên Truyện Chữ.",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "NovelFull.Net",
+            "author": "vbook-ext",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelfull.net_ok/plugin.zip",
+            "version": 1,
+            "source": "https://novelfull.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelfull.net_ok/icon.png",
+            "description": "Read novels on NovelFull.Net (uses Browser engine to bypass Cloudflare)",
+            "type": "novel",
+            "locale": "en_US"
         }
     ]
 }
