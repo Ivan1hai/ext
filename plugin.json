@@ -619,6 +619,17 @@
             "description": "Dịch Tiếng Hoa - kho tàng truyện Trung Quốc dịch thuật",
             "type": "chinese_novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Web Truyện Chữ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/webtruyenchu_ok/plugin.zip",
+            "version": 1,
+            "source": "https://webtruyenchu.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/webtruyenchu_ok/icon.png",
+            "description": "Đọc truyện chữ online: tiên hiệp, kiếm hiệp, ngôn tình, đô thị, huyền huyễn, xuyên không…",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
