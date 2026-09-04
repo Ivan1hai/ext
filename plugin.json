@@ -600,13 +600,13 @@
         },
         {
             "name": "NovelFull.Net",
-            "author": "vbook-ext",
+            "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelfull.net_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://novelfull.net",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelfull.net_ok/icon.png",
             "description": "Read novels on NovelFull.Net (uses Browser engine to bypass Cloudflare)",
-            "type": "novel",
+            "type": "eng_novel",
             "locale": "en_US"
         }
     ]
