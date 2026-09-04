@@ -630,6 +630,17 @@
             "description": "Đọc truyện chữ online: tiên hiệp, kiếm hiệp, ngôn tình, đô thị, huyền huyễn, xuyên không…",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Giới Truyện",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/gioitruyen.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://gioitruyen.com/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/gioitruyen.com_ok/icon.png",
+            "description": "Đọc truyện trên Giới Truyện (gioitruyen.com)",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
