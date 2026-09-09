@@ -641,6 +641,17 @@
             "description": "Đọc truyện trên Giới Truyện (gioitruyen.com)",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "TruyenC",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenc_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenc.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenc_ok/icon.png",
+            "description": "Đọc truyện chữ online trên TruyenC",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
