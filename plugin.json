@@ -652,6 +652,17 @@
             "description": "Đọc truyện chữ online trên TruyenC",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "TruyenQQ",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/truyenqqko_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenqqko.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/truyenqqko_ok/icon.png",
+            "description": "TruyenQQ - Đọc truyện tranh online",
+            "type": "comic",
+            "locale": "vi_VN"
         }
     ]
 }
