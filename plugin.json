@@ -162,8 +162,8 @@
             "name": "La Cà Truyện",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lacatruyen_ok/plugin.zip",
-            "version": 7,
-            "source": "https://lacatruyen.art",
+            "version": 8,
+            "source": "https://lacatruyen.fit",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lacatruyen_ok/icon.png",
             "description": "Đọc truyện tại La Cà Truyện",
             "type": "novel",
@@ -280,13 +280,13 @@
             "locale": "vi_VN"
         },
         {
-            "name": "Truyện Dịch Miễn Phí",
+            "name": "Cơm Nguội Novel",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyendichmienphi_ok/plugin.zip",
-            "version": 3,
-            "source": "https://truyendichmienphi.com",
+            "version": 5,
+            "source": "https://comnguoinovel.com",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyendichmienphi_ok/icon.png",
-            "description": "Truyện Dịch Miễn Phí",
+            "description": "Cơm Nguội Novel (Truyện Dịch Miễn Phí)",
             "type": "novel",
             "locale": "vi_VN"
         },
