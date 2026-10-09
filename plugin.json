@@ -663,6 +663,17 @@
             "description": "TruyenQQ - Đọc truyện tranh online",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "LuotTruyen",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/luottruyen_ok/plugin.zip",
+            "version": 1,
+            "source": "https://luottruyen.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/comic/luottruyen_ok/icon.png",
+            "description": "LuotTruyen - Đọc truyện tranh online",
+            "type": "comic",
+            "locale": "vi_VN"
         }
     ]
 }
