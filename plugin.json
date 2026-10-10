@@ -685,6 +685,17 @@
             "description": "Đọc truyện dịch tiên hiệp, huyền huyễn, đô thị, kiếm hiệp... miễn phí.",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "uukanshu",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/uukanshu_ok/plugin.zip",
+            "version": 1,
+            "source": "https://uukanshu.cc",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/uukanshu_ok/icon.png",
+            "description": "UU看書 - 繁體免費小說網",
+            "type": "chinese_novel",
+            "locale": "zh_CN"
         }
     ]
 }
