@@ -674,6 +674,17 @@
             "description": "LuotTruyen - Đọc truyện tranh online",
             "type": "comic",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Web Truyện Dịch",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/webtruyendich_ok/plugin.zip",
+            "version": 1,
+            "source": "https://webtruyendich.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/webtruyendich_ok/icon.png",
+            "description": "Đọc truyện dịch tiên hiệp, huyền huyễn, đô thị, kiếm hiệp... miễn phí.",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
