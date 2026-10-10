@@ -696,6 +696,39 @@
             "description": "UU看書 - 繁體免費小說網",
             "type": "chinese_novel",
             "locale": "zh_CN"
+        },
+        {
+            "name": "HHPanda",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/hhpanda.st_ok/plugin.zip",
+            "version": 1,
+            "source": "https://hhpanda.st",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/hhpanda.st_ok/icon.png",
+            "description": "Xem hoạt hình 3D Trung Quốc Vietsub/Thuyết minh 4K trên hhpanda.st",
+            "type": "video",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "LuPhim",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/luphim.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://luphim.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/luphim.com_ok/icon.png",
+            "description": "Xem phim online HD Vietsub, thuyết minh trên luphim.com",
+            "type": "video",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "RoPhim",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/rophim.soy_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.rophim.soy",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/rophim.soy_ok/icon.png",
+            "description": "Xem phim online HD Vietsub, thuyết minh trên rophim.soy",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
