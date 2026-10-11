@@ -729,6 +729,28 @@
             "description": "Xem phim online HD Vietsub, thuyết minh trên rophim.soy",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Syosetu",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/syosetu.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://syosetu.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/syosetu.com_ok/icon.png",
+            "description": "小説家になろう - Đọc truyện tiếng Nhật (raw) trên Syosetu",
+            "type": "novel",
+            "locale": "ja_JP"
+        },
+        {
+            "name": "Hameln (Syosetu.org)",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/syosetu.org_ok/plugin.zip",
+            "version": 1,
+            "source": "https://syosetu.org",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/syosetu.org_ok/icon.png",
+            "description": "ハーメルン - SS・小説投稿サイト (syosetu.org). Cần CONFIG_COOKIE cf_clearance + CONFIG_UA do Cloudflare.",
+            "type": "chinese_novel",
+            "locale": "ja_JP"
         }
     ]
 }
