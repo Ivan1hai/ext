@@ -751,6 +751,17 @@
             "description": "ハーメルン - SS・小説投稿サイト (syosetu.org). Cần CONFIG_COOKIE cf_clearance + CONFIG_UA do Cloudflare.",
             "type": "chinese_novel",
             "locale": "ja_JP"
+        },
+        {
+            "name": "AnimeVietsub",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/animevietsub.nl_ok/plugin.zip",
+            "version": 1,
+            "source": "https://animevietsub.nl",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/animevietsub.nl_ok/icon.png",
+            "description": "Xem anime Vietsub online trên animevietsub.nl",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
