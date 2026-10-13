@@ -762,6 +762,17 @@
             "description": "Xem anime Vietsub online trên animevietsub.nl",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "DocLN (Hako)",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/docln_ok/plugin.zip",
+            "version": 1,
+            "source": "https://docln.sbs",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/docln_ok/icon.png",
+            "description": "Plugin đọc truyện Light Novel từ docln.sbs (Hako)",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
