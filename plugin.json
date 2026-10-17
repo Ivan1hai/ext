@@ -773,6 +773,17 @@
             "description": "Plugin đọc truyện Light Novel từ docln.sbs (Hako)",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Novelpia Global",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/global.novelpia.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://global.novelpia.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/global.novelpia.com_ok/icon.png",
+            "description": "Novelpia Global English novels",
+            "type": "novel",
+            "locale": "en_US"
         }
     ]
 }
