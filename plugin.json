@@ -784,6 +784,17 @@
             "description": "Novelpia Global English novels",
             "type": "novel",
             "locale": "en_US"
+        },
+        {
+            "name": "Truyện Mới",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenmoi.app_ok/plugin.zip",
+            "version": 1,
+            "source": "https://truyenmoi.app",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/truyenmoi.app_ok/icon.png",
+            "description": "Đọc truyện online tại TruyenMoi.app: tiên hiệp, kiếm hiệp, ngôn tình, đô thị, huyền huyễn, xuyên không...",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
