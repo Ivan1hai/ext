@@ -806,6 +806,17 @@
             "description": "LoHi - đọc truyện dịch tiếng Việt (catalogue công khai LoHi Trends + chương từ lohi2.com).",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "MotPhim",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/motphimc.mx_ok/plugin.zip",
+            "version": 1,
+            "source": "https://motphimc.mx",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/video/motphimc.mx_ok/icon.png",
+            "description": "Plugin xem phim MotPhim (motphimc.mx) - phim bộ/lẻ/hoạt hình Vietsub + Thuyết Minh",
+            "type": "video",
+            "locale": "vi_VN"
         }
     ]
 }
