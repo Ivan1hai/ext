@@ -795,6 +795,17 @@
             "description": "Đọc truyện online tại TruyenMoi.app: tiên hiệp, kiếm hiệp, ngôn tình, đô thị, huyền huyễn, xuyên không...",
             "type": "novel",
             "locale": "vi_VN"
+        },
+        {
+            "name": "LoHi",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lohi2.com_ok/plugin.zip",
+            "version": 1,
+            "source": "https://lohi2.com",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/lohi2.com_ok/icon.png",
+            "description": "LoHi - đọc truyện dịch tiếng Việt (catalogue công khai LoHi Trends + chương từ lohi2.com).",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
