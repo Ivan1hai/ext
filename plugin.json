@@ -96,11 +96,11 @@
             "name": "NovelNext",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelnext.me_ok/plugin.zip",
-            "version": 1,
-            "source": "https://www.novelnext.me",
+            "version": 2,
+            "source": "https://novelnext.me",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelnext.me_ok/icon.png",
             "description": "Read novels on NovelNext",
-            "type": "novel",
+            "type": "eng_novel",
             "locale": "en_US"
         },
         {
