@@ -839,6 +839,17 @@
             "description": "カクヨム - Đọc truyện tiếng Nhật (raw) trên Kakuyomu",
             "type": "novel",
             "locale": "ja_JP"
+        },
+        {
+            "name": "NovelPhoenix",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelphoenix.net_ok/plugin.zip",
+            "version": 1,
+            "source": "https://novelphoenix.net",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/novelphoenix.net_ok/icon.png",
+            "description": "Read novels on NovelPhoenix.net",
+            "type": "novel",
+            "locale": "en_US"
         }
     ]
 }
