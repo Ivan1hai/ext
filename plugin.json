@@ -828,6 +828,17 @@
             "description": "Xem phim online HD Vietsub trên phimtv2.com",
             "type": "video",
             "locale": "vi_VN"
+        },
+        {
+            "name": "Kakuyomu",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/kakuyomu.jp_ok/plugin.zip",
+            "version": 1,
+            "source": "https://kakuyomu.jp",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/kakuyomu.jp_ok/icon.png",
+            "description": "カクヨム - Đọc truyện tiếng Nhật (raw) trên Kakuyomu",
+            "type": "novel",
+            "locale": "ja_JP"
         }
     ]
 }
