@@ -850,6 +850,17 @@
             "description": "Read novels on NovelPhoenix.net",
             "type": "novel",
             "locale": "en_US"
+        },
+        {
+            "name": "Alphapolis",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/alphapolis.co.jp_ok/plugin.zip",
+            "version": 1,
+            "source": "https://www.alphapolis.co.jp",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/jp_novel/alphapolis.co.jp_ok/icon.png",
+            "description": "Alphapolis (アルファポリス) - Doc truyen tien Nhat (raw) tai alphapolis.co.jp",
+            "type": "novel",
+            "locale": "ja_JP"
         }
     ]
 }
