@@ -861,6 +861,17 @@
             "description": "Alphapolis (アルファポリス) - Doc truyen tien Nhat (raw) tai alphapolis.co.jp",
             "type": "novel",
             "locale": "ja_JP"
+        },
+        {
+            "name": "LunarX",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/lunarx.to_ok/plugin.zip",
+            "version": 1,
+            "source": "https://lunarx.to/novel",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/lunarx.to_ok/icon.png",
+            "description": "LunarX - đọc truyện novel online (NovelFire + LunarX)",
+            "type": "novel",
+            "locale": "vi_VN"
         }
     ]
 }
