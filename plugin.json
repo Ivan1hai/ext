@@ -239,10 +239,10 @@
             "name": "Tiệm Truyện Chữ",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tiemtruyenchu_ok/plugin.zip",
-            "version": 6,
-            "source": "https://www.tiemtruyenchu.com/",
+            "version": 10,
+            "source": "https://tiemtruyenchu.cloud/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/novel/tiemtruyenchu_ok/icon.png",
-            "description": "Đọc truyện chữ trên Tiệm Truyện Chữ",
+            "description": "Doc truyen chu tren Tiem Truyen Chu (api 1.1.1). Cau hinh tai khoan trong Cai dat extension de doc noi dung chuong.",
             "type": "novel",
             "locale": "vi_VN"
         },
@@ -871,6 +871,17 @@
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/eng_novel/lunarx.to_ok/icon.png",
             "description": "LunarX - đọc truyện novel online (NovelFire + LunarX)",
             "type": "novel",
+            "locale": "vi_VN"
+        },
+        {
+            "name": "xsw - 台灣小說網",
+            "author": "ivanzzz",
+            "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/xsw.tw_ok/plugin.zip",
+            "version": 1,
+            "source": "https://m.xsw.tw/",
+            "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/xsw.tw_ok/icon.png",
+            "description": "台灣小說網 - Đọc truyện online",
+            "type": "chinese_novel",
             "locale": "vi_VN"
         }
     ]
