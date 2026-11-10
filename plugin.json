@@ -877,12 +877,12 @@
             "name": "xsw - 台灣小說網",
             "author": "ivanzzz",
             "path": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/xsw.tw_ok/plugin.zip",
-            "version": 1,
+            "version": 2,
             "source": "https://m.xsw.tw/",
             "icon": "https://raw.githubusercontent.com/Ivan1hai/ext/main/chinese_novel/xsw.tw_ok/icon.png",
             "description": "台灣小說網 - Đọc truyện online",
             "type": "chinese_novel",
-            "locale": "vi_VN"
+            "locale": "zh_CN"
         }
     ]
 }
